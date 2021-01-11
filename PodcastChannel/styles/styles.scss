@@ -1,0 +1,12 @@
+@import "variables";
+@import "basic-rules";
+
+body {
+    font-family: $font-primary;
+    &.mono {
+    font-family: $font-secondary;
+    }
+    button {
+        background-color: $color-btn;
+    }
+}
