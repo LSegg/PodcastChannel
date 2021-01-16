@@ -1,0 +1,26 @@
+h1 {
+    width: 100%;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 1.16;
+    letter-spacing: 0;
+}
+.strikethrough {
+    text-decoration: line-through;
+}
+p {
+    span {
+        display: block;
+    }
+}
+button {
+    width: 100%;
+    max-width: 300px;
+    padding: 13px 0px;
+    background-color: $color-btn;
+    font-family: $font-secondary;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+}

@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    color: $color-font;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: $font-primary;
+    letter-spacing: 0;
+    .mono {
+        font-family: $font-secondary;
+        font-size: 0.875em;
+    }
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
