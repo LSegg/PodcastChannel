@@ -28,7 +28,7 @@ body {
 
 body .mono {
   font-family: "IBM Plex Mono", monospace;
-  font-size: 0.875em;
+  font-size: 0.875rem;
 }
 
 .container {
@@ -41,25 +41,20 @@ body .mono {
 }
 
 header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   width: 100%;
-  padding: 0px 19px 0px 16px;
 }
 
 header .header-container {
-  height: 44px;
-}
-
-header #logo-podcast {
-  width: 24px;
-}
-
-header .checkbox {
-  position: absolute;
-  top: 10px;
-  opacity: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 19px 10px 16px;
 }
 
 header .times {
@@ -67,39 +62,40 @@ header .times {
 }
 
 header nav {
-  width: 100%;
   background-color: #0000FF;
+  display: none;
 }
 
-header nav li {
-  list-style: none;
+header nav ul li {
+  padding: 16px 0 0 16px;
 }
 
-header nav a {
-  width: 100%;
-  display: block;
+header nav ul li:last-of-type {
+  padding: 16px 0 24px 16px;
+}
+
+header nav ul li a {
   color: #ffffff;
-  font-family: "IBM Plex Mono", monospace;
-  font-size: 1em;
-  letter-spacing: 0;
-  line-height: 1.75;
+  font-size: 1rem;
   text-transform: uppercase;
-  text-decoration: none;
+  letter-spacing: 0;
+  line-height: 1.75rem;
 }
 
-header #btn-menu:checked ~ nav {
-  display: block;
+header .checkbox {
+  position: absolute;
+  opacity: 0;
 }
 
 h2 {
   padding: 0px 0px 0px 16px;
-  font-size: 36px;
+  font-size: 2.25rem;
   font-weight: normal;
 }
 
 p {
   font-family: "IBM Plex Mono", monospace;
-  font-size: 14px;
+  font-size: 0.875rem;
   letter-spacing: 0;
 }
 
@@ -107,23 +103,29 @@ a {
   text-decoration: none;
 }
 
-h1 {
+#intro {
+  padding: 29px 16px 24px 16px;
+}
+
+#intro h1 {
   width: 100%;
   font-size: 36px;
   font-weight: 400;
   line-height: 1.16;
   letter-spacing: 0;
+  padding-bottom: 16px;
 }
 
-.strikethrough {
+#intro .strikethrough {
   text-decoration: line-through;
 }
 
-p span {
-  display: block;
+#intro p {
+  line-height: 1.375rem;
+  padding-bottom: 36px;
 }
 
-button {
+#intro button {
   width: 100%;
   max-width: 300px;
   padding: 13px 0px;
