@@ -1,0 +1,35 @@
+header {
+    width: 100%;
+    .header-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 19px 10px 16px;
+    }
+    .times {
+        display: none;
+    }
+    nav {
+        background-color: $color-background-blue;
+        display: none;
+        ul {
+            li {
+                padding: 16px 0 0 16px;
+                &:last-of-type {
+                    padding: 16px 0 24px 16px;
+                }
+                a {
+                    color: $color-font-w;
+                    font-size: 1rem;
+                    text-transform: uppercase;
+                    letter-spacing: 0;
+                    line-height: 1.75rem;
+                }
+            }
+        }
+    }
+    .checkbox {
+        position: absolute;
+        opacity: 0;
+    }
+}
