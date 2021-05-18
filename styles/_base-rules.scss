@@ -1,4 +1,6 @@
+/* Cleaning some default styles */
 * {
+    /* Box Model */
     margin: 0;
     padding: 0;
     border: 0;
@@ -6,24 +8,26 @@
 }
 
 html {
-    font-size: 16px;
+    font-size: 16px; /* Default pixel size controlling ems and rems is 16px.*/
 }
 
 body {
-    color: $color-font;
+    /* Layout */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    /* Typhography */
+    color: $color-font;
     font-family: $font-primary;
     letter-spacing: 0;
     .mono {
         font-family: $font-secondary;
         font-size: 0.875rem;
-        
     }
 }
 
 .container {
+    /* Layout */
     display: flex;
     justify-content: space-between;
 }

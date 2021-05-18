@@ -1,10 +1,14 @@
 #section-episodios {
+    /* Box Model */
     width: 100%;
+    /* Visual Properties */
     background-color: $color-background-blue;
     h2 {
+        /* Typography */
         color: #ffffff;
     }
     .iframe-container {
+        /* Box Model */
         width: 298px;
         height: 225px;
     }

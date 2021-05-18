@@ -1,4 +1,16 @@
+/*Inheritance*/
+/* Fonts */
+/* Colors*/
+/* Breakpoints */
+/* 320px (mobile devices) */
+/* 480px (iPads, tablets) */
+/* 768px (small screens, laptops) */
+/* 1024px (large screens, desktops) */
+/* 1200px (extra large screens, TVs) */
+/* E.g. :@media screen and (max-width: $breakpoint-m) */
+/* Cleaning some default styles */
 * {
+  /* Box Model */
   margin: 0;
   padding: 0;
   border: 0;
@@ -8,10 +20,11 @@
 
 html {
   font-size: 16px;
+  /* Default pixel size controlling ems and rems is 16px.*/
 }
 
 body {
-  color: #060A24;
+  /* Layout */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -22,6 +35,8 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  /* Typhography */
+  color: #060a24;
   font-family: "IBM Plex Sans", sans-serif;
   letter-spacing: 0;
 }
@@ -32,6 +47,7 @@ body .mono {
 }
 
 .container {
+  /* Layout */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -41,10 +57,12 @@ body .mono {
 }
 
 header {
+  /* Box Model */
   width: 100%;
 }
 
 header .header-container {
+  /* Layout */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -54,27 +72,34 @@ header .header-container {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  /* Box Model */
   padding: 10px 19px 10px 16px;
 }
 
 header .times {
+  /* Layout */
   display: none;
 }
 
 header nav {
-  background-color: #0000FF;
+  /* Layout */
   display: none;
+  /* Visual Properties */
+  background-color: #0000ff;
 }
 
 header nav ul li {
+  /* Box Model */
   padding: 16px 0 0 16px;
 }
 
 header nav ul li:last-of-type {
+  /* Box Model */
   padding: 16px 0 24px 16px;
 }
 
 header nav ul li a {
+  /* Typograpphy */
   color: #ffffff;
   font-size: 1rem;
   text-transform: uppercase;
@@ -83,88 +108,126 @@ header nav ul li a {
 }
 
 header .checkbox {
+  /* Layout */
   position: absolute;
+  /* Visual Properties */
   opacity: 0;
 }
 
 h2 {
+  /* Box Model */
   padding: 0px 0px 0px 16px;
+  /* Typhography */
   font-size: 2.25rem;
   font-weight: normal;
 }
 
 p {
+  /* Typhography */
   font-family: "IBM Plex Mono", monospace;
   font-size: 0.875rem;
   letter-spacing: 0;
 }
 
 a {
+  /* Typhography */
   text-decoration: none;
 }
 
 #intro {
+  /* Box Model */
   padding: 29px 16px 24px 16px;
 }
 
 #intro h1 {
+  /* Box Model */
+  padding-bottom: 16px;
   width: 100%;
+  /* Typography */
   font-size: 36px;
   font-weight: 400;
   line-height: 1.16;
   letter-spacing: 0;
-  padding-bottom: 16px;
 }
 
 #intro .strikethrough {
+  /* Typography */
   text-decoration: line-through;
 }
 
 #intro p {
-  line-height: 1.375rem;
+  /* Box Model */
   padding-bottom: 36px;
+  /* Typography */
+  line-height: 1.375rem;
 }
 
 #intro button {
+  /* Box Model */
   width: 100%;
   max-width: 300px;
   padding: 13px 0px;
-  background-color: #00F3BB;
+  /* Visual Properties */
+  background-color: #00f3bb;
+  /* Typography */
   font-family: "IBM Plex Mono", monospace;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 600;
   text-transform: uppercase;
   text-align: center;
 }
 
 #section-episodios {
+  /* Box Model */
   width: 100%;
-  background-color: #0000FF;
+  /* Visual Properties */
+  background-color: #0000ff;
 }
 
 #section-episodios h2 {
+  /* Typography */
   color: #ffffff;
 }
 
+#section-episodios .iframe-container {
+  /* Box Model */
+  width: 298px;
+  height: 225px;
+}
+
 #section-venimos {
+  /* Box Model */
   width: 100%;
 }
 
 #section-venimos img {
+  /* Box Model */
   width: 360px;
 }
 
 #section-invitadas {
+  /* Box Model */
   width: 100%;
 }
 
 #section-invitadas img {
+  /* Box Model */
   width: 50%;
 }
 
 #section-temas {
+  /* Box Model */
   width: 100%;
+  /* Typography */
   text-align: center;
   font-weight: 600;
 }
+
+/* CSS Grouped by type with the folliwing order:
+Inheritance
+Lauyout
+Box Model
+Visual Properties
+Typography
+Others */
 /*# sourceMappingURL=styles.css.map */

@@ -1,10 +1,18 @@
-// fonts
-$font-primary: 'IBM Plex Sans', sans-serif;
-$font-secondary: 'IBM Plex Mono', monospace;
+/* Fonts */
+$font-primary: "IBM Plex Sans", sans-serif;
+$font-secondary: "IBM Plex Mono", monospace;
 
-// colors
-$color-font: #060A24;
+/* Colors*/
+$color-font: #060a24;
 $color-font-w: #ffffff;
-$color-background-blue: #0000FF;
-$color-dark-blue: #0000A3;
-$color-btn: #00F3BB;
+$color-background-blue: #0000ff;
+$color-dark-blue: #0000a3;
+$color-btn: #00f3bb;
+
+/* Breakpoints */
+$breakpoint-xs: 20rem; /* 320px (mobile devices) */
+$breakpoint-sm: 30rem; /* 480px (iPads, tablets) */
+$breakpoint-m: 48rem; /* 768px (small screens, laptops) */
+$breakpoint-lg: 64rem; /* 1024px (large screens, desktops) */
+$breakpoint-xl: 75rem; /* 1200px (extra large screens, TVs) */
+/* E.g. :@media screen and (max-width: $breakpoint-m) */
