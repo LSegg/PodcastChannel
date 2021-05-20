@@ -1,7 +1,21 @@
 #section-temas {
     /* Box Model */
     width: 100%;
-    /* Typography */
-    text-align: center;
-    font-weight: 600;
+
+    h2 {
+        /* Typography */
+        font-weight: 400;
+        padding: 48px 16px 0 16px;
+    }
+    div {
+        padding: 36px;
+        /* Typography */
+        text-align: center;
+        p {
+            /* Typography */
+            font-weight: 600;
+            font-family: $font-primary;
+            font-size: 24px;
+        }
+    }
 }

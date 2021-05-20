@@ -1,31 +1,26 @@
-#intro {
-    /* Box Model */
-    padding: 29px 16px 24px 16px;
-    h1 {
+#section-novedades {
+    /* Visual Properties */
+    background-color: $color-background-blue;
+    background-image: linear-gradient(
+        225deg,
+        $color-background-blue 0%,
+        $color-dark-blue 100%
+    );
+    clip-path: polygon(0 2.8%, 100% 0%, 100% 97.2%, 0% 100%);
+    text-align: center;
+    h2 {
         /* Box Model */
-        padding-bottom: 16px;
-        width: 100%;
+        padding: 64px 16px 36px 16px;
         /* Typography */
-        font-size: 36px;
+        color: $color-font-w;
         font-weight: 400;
-        line-height: 1.16;
-        letter-spacing: 0;
-    }
-    .strikethrough {
-        /* Typography */
-        text-decoration: line-through;
-    }
-    p {
-        /* Box Model */
-        padding-bottom: 36px;
-        /* Typography */
-        line-height: 1.375rem;
     }
     button {
         /* Box Model */
         width: 100%;
         max-width: 300px;
         padding: 13px 0px;
+        margin: 36px 0px 67px 0px;
         /* Visual Properties */
         background-color: $color-btn;
         :hover {

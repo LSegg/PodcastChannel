@@ -1,8 +1,15 @@
 #section-invitadas {
+    .container-imgs {
+        /* Layout */
+        display: flex;
+        flex-direction: column;
+        /* Box Model */
+        padding-top: 14px;
+    }
     /* Box Model */
     width: 100%;
     img {
         /* Box Model */
-        width: 50%;
+        width: 100%;
     }
 }

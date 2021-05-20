@@ -8,17 +8,17 @@
             rel="stylesheet"
             href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
         />
-        <link rel="stylesheet" href="styles/styles.css" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link
-            href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap"
+            href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100;200;300;400;500;600;700&family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&display=swap"
             rel="stylesheet"
         />
+        <link rel="stylesheet" href="styles/styles.css" />
     </head>
 
     <body>
         <header>
-            <div class="header-container">
+            <div class="container-header">
                 <img
                     src="/images/logo.svg"
                     alt="Logo del podcast."
@@ -58,8 +58,8 @@
             <section id="section-episodios">
                 <div class="container-background">
                     <h2>Episodios</h2>
-                    <div>
-                        <div class="iframe-container">
+                    <div class="container-flex">
+                        <div class="container-iframe">
                             <iframe
                                 src="https://open.spotify.com/embed-podcast/episode/7AZZy2nJ4R9ZndHW0h2yxt"
                                 width="100%"
@@ -69,7 +69,7 @@
                                 allow="encrypted-media"
                             ></iframe>
                         </div>
-                        <div class="iframe-container">
+                        <div class="container-iframe">
                             <iframe
                                 src="https://open.spotify.com/embed-podcast/episode/1ezdL2ivAGLwSE6Xbssxqt"
                                 width="100%"
@@ -79,7 +79,7 @@
                                 allow="encrypted-media"
                             ></iframe>
                         </div>
-                        <div class="iframe-container">
+                        <div class="container-iframe">
                             <iframe
                                 src="https://open.spotify.com/embed-podcast/episode/3cWta1iiQSfvrdHaCbLkSD"
                                 width="100%"
@@ -89,9 +89,9 @@
                                 allow="encrypted-media"
                             ></iframe>
                         </div>
-                        <div class="iframe-container">
+                        <div class="container-iframe">
                             <iframe
-                                src="https://open.spotify.com/embed-podcast/episode/31VyAQAwBiKoHVoYUCEzjQ"
+                                src="https://open.spotify.com/embed/episode/5mddqHiI96V0ZMdMidn3WW"
                                 width="100%"
                                 height="232"
                                 frameborder="0"
@@ -103,52 +103,49 @@
                 </div>
             </section>
             <section id="section-venimos">
-                <!-- BORRAR WIDTH DE LA IMAGEN DSP DE HABERLA AJUSTADO EN CSS --> 
-                <img
-                    width="75%"
-                    src="images/phone.png"
-                    alt="Pantalla móvil de un celular donde
+                <div class="container-flex">
+                    <img
+                        src="images/phone.png"
+                        alt="Pantalla móvil de un celular donde
                 se observa una noticia periodística de la historia de las
                 mujeres en el mundo de la programación."
-                />
-                <div>
-                    <h2>De dónde venimos</h2>
-                    <p>
-                        Our posturings, our imagined self-importance, the
-                        delusion that we have some privileged position in the
-                        Universe, are challenged by this point of pale light.
-                        <br />
-                        Our planet is a lonely speck in the great enveloping
-                        cosmic dark. In our obscurity, in all this vastness,
-                        there is no hint that help will come from elsewhere to
-                        save us from ourselves.
-                    </p>
+                    />
+                    <div>
+                        <h2><span>De dónde</span> venimos</h2>
+                        <p>
+                            Our posturings, our imagined self-importance, the
+                            delusion that we have some privileged position in
+                            the Universe, are challenged by this point of pale
+                            light.
+                        </p>
+                        <p>
+                            Our planet is a lonely speck in the great enveloping
+                            cosmic dark. In our obscurity, in all this vastness,
+                            there is no hint that help will come from elsewhere
+                            to save us from ourselves.
+                        </p>
+                    </div>
                 </div>
             </section>
             <section id="section-invitadas">
                 <h2>Invitadas&#47;os estelares</h2>
-                <div>
+                <div class="container-imgs">
                     <img
                         src="images/grace-hopper.png"
                         alt="Foto de Grace Hopper, científica de la computación y militar estadounidense que desarrolló el primer compilador para un lenguaje de programación."
-                    />
-                    <img
+                    /><img
                         src="images/Katie-Bouman.png"
                         alt="Foto de Katie Bouman, científica de la computación estadounidense que investiga sistemas para formación de imágenes por ordenador."
-                    />
-                    <img
+                    /><img
                         src="images/Margaret_Hamilton.png"
                         alt="Foto de Margaret Hamilton, científica computacional, matemática e ingeniera de Software y ex directora del MIT."
-                    />
-                    <img
+                    /><img
                         src="images/An E.R.A.Univac 1103 computer in the 1950s.png"
                         alt="Operadoras junto al computador E.R.A. UNIVAC 1103 construído en octubre de 1953."
-                    />
-                    <img
+                    /><img
                         src="images/Computer operators with an Eniac — the world’s first programmable general-purpose computer.png"
                         alt="Operadoras trabajando con una ENIAC, una de las primeras computadoras de propósito general."
-                    />
-                    <img
+                    /><img
                         src="images/susan-kare.png"
                         alt="Foto de Susan Kare, artista y diseñadora gráfica estadounidense creadora de la iconografía de Apple Macintosh."
                     />
@@ -185,14 +182,14 @@
                     <p>Seguridad informática</p>
                 </div>
             </section>
-            <section>
+            <section id="section-novedades">
                 <h2>¿Querés las últimas novedades?</h2>
                 <button>Escuchá los episodios</button>
             </section>
         </main>
         <footer>
             <p>&#169; 2019- Hello blue pale dot</p>
-            <div>
+            <div class="container-social">
                 <a href="https://spotify.com/" target="_blank"
                     ><i class="fab fa-spotify"></i
                 ></a>

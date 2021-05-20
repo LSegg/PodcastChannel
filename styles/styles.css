@@ -20,7 +20,8 @@
 
 html {
   font-size: 16px;
-  /* Default pixel size controlling ems and rems is 16px.*/
+  /* Default pixel size controlling ems and rems.*/
+  max-width: 100%;
 }
 
 body {
@@ -61,7 +62,7 @@ header {
   width: 100%;
 }
 
-header .header-container {
+header .container-header {
   /* Layout */
   display: -webkit-box;
   display: -ms-flexbox;
@@ -177,31 +178,100 @@ a {
   text-align: center;
 }
 
+#intro button :hover {
+  cursor: pointer;
+}
+
 #section-episodios {
+  /* Layout */
   /* Box Model */
   width: 100%;
+  padding-bottom: 143.5px;
   /* Visual Properties */
   background-color: #0000ff;
+  background-image: linear-gradient(225deg, #0000ff 0%, #0000a3 100%);
+  -webkit-clip-path: polygon(0 2.8%, 100% 0%, 100% 97.2%, 0% 100%);
+          clip-path: polygon(0 2.8%, 100% 0%, 100% 97.2%, 0% 100%);
+}
+
+#section-episodios .container-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #section-episodios h2 {
+  /* Box Model */
+  padding: 64px 0 21px 16px;
   /* Typography */
   color: #ffffff;
+  font-weight: 400;
 }
 
-#section-episodios .iframe-container {
+#section-episodios div.container-iframe {
   /* Box Model */
   width: 298px;
-  height: 225px;
 }
 
 #section-venimos {
+  /* Layout */
   /* Box Model */
   width: 100%;
 }
 
-#section-venimos img {
+#section-venimos .container-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#section-venimos h2 {
+  /* Layout */
+  /* Typography */
+  font-weight: 400;
+}
+
+#section-venimos h2 span {
+  display: block;
+}
+
+#section-venimos p {
   /* Box Model */
+  padding: 8px 16px;
+  /* Typography */
+  letter-spacing: 0;
+  line-height: 22px;
+}
+
+#section-venimos p:last-of-type {
+  padding-bottom: 54px;
+}
+
+#section-venimos img {
+  /* Layout */
+  z-index: 2;
+  /* Box Model */
+  margin-top: -95.5px;
   width: 360px;
 }
 
@@ -210,17 +280,104 @@ a {
   width: 100%;
 }
 
+#section-invitadas .container-imgs {
+  /* Layout */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  /* Box Model */
+  padding-top: 14px;
+}
+
 #section-invitadas img {
   /* Box Model */
-  width: 50%;
+  width: 100%;
 }
 
 #section-temas {
   /* Box Model */
   width: 100%;
+}
+
+#section-temas h2 {
+  /* Typography */
+  font-weight: 400;
+  padding: 48px 16px 0 16px;
+}
+
+#section-temas div {
+  padding: 36px;
   /* Typography */
   text-align: center;
+}
+
+#section-temas div p {
+  /* Typography */
   font-weight: 600;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 24px;
+}
+
+footer p {
+  margin-top: 24px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 22px;
+}
+
+footer .container-sociaL {
+  margin-top: 16px;
+  margin-bottom: 21px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#section-novedades {
+  /* Visual Properties */
+  background-color: #0000ff;
+  background-image: linear-gradient(225deg, #0000ff 0%, #0000a3 100%);
+  -webkit-clip-path: polygon(0 2.8%, 100% 0%, 100% 97.2%, 0% 100%);
+          clip-path: polygon(0 2.8%, 100% 0%, 100% 97.2%, 0% 100%);
+  text-align: center;
+}
+
+#section-novedades h2 {
+  /* Box Model */
+  padding: 64px 16px 36px 16px;
+  /* Typography */
+  color: #ffffff;
+  font-weight: 400;
+}
+
+#section-novedades button {
+  /* Box Model */
+  width: 100%;
+  max-width: 300px;
+  padding: 13px 0px;
+  margin: 36px 0px 67px 0px;
+  /* Visual Properties */
+  background-color: #00f3bb;
+  /* Typography */
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+#section-novedades button :hover {
+  cursor: pointer;
 }
 
 /* CSS Grouped by type with the folliwing order:

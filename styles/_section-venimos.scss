@@ -1,8 +1,36 @@
 #section-venimos {
+    /* Layout */
+    .container-flex {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
     /* Box Model */
     width: 100%;
-    img {
+    h2 {
+        /* Layout */
+        span {
+            display: block;
+        }
+        /* Typography */
+        font-weight: 400;
+    }
+    p {
         /* Box Model */
+        padding: 8px 16px;
+        &:last-of-type {
+            padding-bottom: 54px;
+        }
+        /* Typography */
+        letter-spacing: 0;
+        line-height: 22px;
+    }
+    img {
+        /* Layout */
+        z-index: 2;
+        /* Box Model */
+        margin-top: -95.5px;
         width: 360px;
     }
 }

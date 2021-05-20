@@ -8,7 +8,8 @@
 }
 
 html {
-    font-size: 16px; /* Default pixel size controlling ems and rems is 16px.*/
+    font-size: 16px; /* Default pixel size controlling ems and rems.*/
+    max-width: 100%;
 }
 
 body {
