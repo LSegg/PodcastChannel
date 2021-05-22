@@ -1,43 +1,44 @@
 header {
     /* Box Model */
     width: 100%;
-    .container-header {
-        /* Layout */
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        /* Box Model */
-        padding: 0.625rem 1.1875rem 0.625rem 1rem; /* 10px 19px 10px 16px */
-    }
+    /* Layout */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* Box Model */
+    padding: 0.625rem 1.1875rem 0.625rem 1rem; /* 10px 19px 10px 16px */
     .checkbox {
         /* Layout */
         position: absolute;
         /* Visual Properties */
         opacity: 0;
     }
-    .bars {
-        /* Animations */
-        transition: opacity 0.3s linear;
-    }
     .times {
         /* Layout */
-        display: none;
-        /* Animations */
-        transition: opacity 0.3s linear;
+        position: absolute;
+        top: 0.7rem;
+        right: 1.3rem;
+        /* Visual Properties */
+        opacity: 0;
     }
     nav {
         /* Layout */
-        display: none;
+        display: block;
+        position: absolute;
+        top: 2.75rem;
+        left: 0;
         /* Box Model */
         padding: 1rem 0 0 1rem;
+        width: 100%;
         /* Visual Properties */
         background-color: $color-background-blue;
+        visibility: hidden;
         ul {
             /* Typography */
             list-style-type: none;
             li {
                 /* Box Model */
-                padding-bottom: 1.5625rem;
+                padding-bottom: 1.5em;
                 a {
                     /* Typograpphy */
                     text-transform: uppercase;
@@ -45,5 +46,18 @@ header {
                 }
             }
         }
+    }
+    /* Burger menu functionality */
+    input[type="checkbox"]:checked ~ .bars {
+        /* Visual Properties */
+        opacity: 0%;
+    }
+    input[type="checkbox"]:checked ~ .times {
+        /* Visual Properties */
+        opacity: 100%;
+    }
+    input[type="checkbox"]:checked ~ nav {
+        /* Layout */
+        visibility: visible;
     }
 }

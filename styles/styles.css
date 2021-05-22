@@ -5,7 +5,7 @@
 /* 480px (iPads, tablets) */
 /* 768px (small screens, laptops) */
 /* 1024px (large screens, desktops) */
-/* 1200px (extra large screens, TVs) */
+/* 1440px (extra large screens, TVs) */
 /* E.g. :@media screen and (max-width: $breakpoint-m) */
 /* Cleaning some default styles */
 * {
@@ -111,9 +111,6 @@ p {
 header {
   /* Box Model */
   width: 100%;
-}
-
-header .container-header {
   /* Layout */
   display: -webkit-box;
   display: -ms-flexbox;
@@ -127,6 +124,7 @@ header .container-header {
   /* Box Model */
   padding: 0.625rem 1.1875rem 0.625rem 1rem;
   /* 10px 19px 10px 16px */
+  /* Burger menu functionality */
 }
 
 header .checkbox {
@@ -136,27 +134,27 @@ header .checkbox {
   opacity: 0;
 }
 
-header .bars {
-  /* Animations */
-  -webkit-transition: opacity 0.3s linear;
-  transition: opacity 0.3s linear;
-}
-
 header .times {
   /* Layout */
-  display: none;
-  /* Animations */
-  -webkit-transition: opacity 0.3s linear;
-  transition: opacity 0.3s linear;
+  position: absolute;
+  top: 0.7rem;
+  right: 1.3rem;
+  /* Visual Properties */
+  opacity: 0;
 }
 
 header nav {
   /* Layout */
-  display: none;
+  display: block;
+  position: absolute;
+  top: 2.75rem;
+  left: 0;
   /* Box Model */
   padding: 1rem 0 0 1rem;
+  width: 100%;
   /* Visual Properties */
   background-color: #0000ff;
+  visibility: hidden;
 }
 
 header nav ul {
@@ -166,13 +164,28 @@ header nav ul {
 
 header nav ul li {
   /* Box Model */
-  padding-bottom: 1.5625rem;
+  padding-bottom: 1.5em;
 }
 
 header nav ul li a {
   /* Typograpphy */
   text-transform: uppercase;
   line-height: 1.75rem;
+}
+
+header input[type="checkbox"]:checked ~ .bars {
+  /* Visual Properties */
+  opacity: 0%;
+}
+
+header input[type="checkbox"]:checked ~ .times {
+  /* Visual Properties */
+  opacity: 100%;
+}
+
+header input[type="checkbox"]:checked ~ nav {
+  /* Layout */
+  visibility: visible;
 }
 
 #intro {

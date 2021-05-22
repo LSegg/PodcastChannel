@@ -29,16 +29,17 @@ Layout of the landing page of a Podcast channel, following the visual guides of 
 
 ### Desktop 
 
-![preview desktop](https://github.com/LSegg/PodcastChannel/blob/main/desktop_preview?raw=true)
+![preview desktop](https://github.com/LSegg/PodcastChannel/blob/main/previews/desktop_preview.png?raw=true)
 
-
+(actualizar preview desktop)
 ### Mobile
 
-![preview mobile](https://github.com/LSegg/PodcastChannel/blob/main/mobile_preview?raw=true)
+![preview mobile](https://github.com/LSegg/PodcastChannel/blob/main/previews/mobile_preview.png?raw=true)
 
+(actualizar preview mobile)
 ### Tablet
 
-
+(agregar preview tablet)
 
 ## Requirements ⚙️
 
