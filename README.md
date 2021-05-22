@@ -10,17 +10,35 @@ Layout of the landing page of a Podcast channel, following the visual guides of 
 
 ## Features 📋
 
-* Mobile first. 
+* Mobile first.
+* Units criteria:
+    * *px* for font root element and borders,
+    * *%* for widths,
+    * *rem* for the rest.
+
+* Properties grouped by type in the following order:
+    * Inheritance
+    * Layout
+    * Box Model
+    * Visual Properties
+    * Typography
+    * Animations
+    * Others
 
 ## Previews
+
+### Desktop 
+
+![preview desktop](https://github.com/LSegg/PodcastChannel/blob/main/desktop_preview?raw=true)
+
 
 ### Mobile
 
 ![preview mobile](https://github.com/LSegg/PodcastChannel/blob/main/mobile_preview?raw=true)
 
-### Desktop 
+### Tablet
 
-![preview desktop](https://github.com/LSegg/PodcastChannel/blob/main/desktop_preview?raw=true)
+
 
 ## Requirements ⚙️
 

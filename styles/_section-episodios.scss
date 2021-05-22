@@ -1,14 +1,5 @@
 #section-episodios {
-    /* Layout */
-    .container-flex {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
-    }
-    /* Box Model */
-    width: 100%;
-    padding-bottom: 143.5px;
+    padding: 4rem 0 8.96875rem 0; /* 143.5px */
     /* Visual Properties */
     background-color: $color-background-blue;
     background-image: linear-gradient(
@@ -16,16 +7,20 @@
         $color-background-blue 0%,
         $color-dark-blue 100%
     );
-    clip-path: polygon(0 2.8%, 100% 0%, 100% 97.2%, 0% 100%);
+    clip-path: polygon(0 2.65%, 100% 0%, 100% 97.35%, 0% 100%);
     h2 {
         /* Box Model */
-        padding: 64px 0 21px 16px;
-        /* Typography */
-        color: $color-font-w;
-        font-weight: 400;
+        margin-bottom: 1.3125rem;
     }
-    div.container-iframe {
-        /* Box Model */
-        width: 298px;
+    .container-iframes {
+        width: 100%;
+    }
+    iframe {
+        width: 93.125%;
+        height: 14.5rem;
+        margin-bottom: 0.6875em;
+        &:last-of-type {
+            margin-bottom: 0;
+        }
     }
 }

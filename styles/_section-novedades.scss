@@ -1,4 +1,6 @@
 #section-novedades {
+    /* Box Model */
+    padding: 0 1rem;
     /* Visual Properties */
     background-color: $color-background-blue;
     background-image: linear-gradient(
@@ -6,31 +8,14 @@
         $color-background-blue 0%,
         $color-dark-blue 100%
     );
-    clip-path: polygon(0 2.8%, 100% 0%, 100% 97.2%, 0% 100%);
+    clip-path: polygon(0 10%, 100% 0%, 100% 100%, 0% 100%);
     text-align: center;
     h2 {
         /* Box Model */
-        padding: 64px 16px 36px 16px;
-        /* Typography */
-        color: $color-font-w;
-        font-weight: 400;
+        padding-top: 4rem;
     }
     button {
         /* Box Model */
-        width: 100%;
-        max-width: 300px;
-        padding: 13px 0px;
-        margin: 36px 0px 67px 0px;
-        /* Visual Properties */
-        background-color: $color-btn;
-        :hover {
-            cursor: pointer;
-        }
-        /* Typography */
-        font-family: $font-secondary;
-        font-size: 16px;
-        font-weight: 600;
-        text-transform: uppercase;
-        text-align: center;
+        margin: 2.25rem 0 4.1875em 0;
     }
 }

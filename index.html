@@ -24,8 +24,13 @@
                     alt="Logo del podcast."
                     id="logo-podcast"
                 />
-                <div class="container">
-                    <input type="checkbox" name="checkbox" class="checkbox" />
+                <div class="container-checkbox">
+                    <input
+                        type="checkbox"
+                        name="checkbox"
+                        class="checkbox"
+                        id="checkbox"
+                    />
                     <label for="checkbox" class="bars"
                         ><i class="fas fa-bars"></i
                     ></label>
@@ -36,70 +41,58 @@
             </div>
             <nav class="mono">
                 <ul>
-                    <li><a href="#section-episodios">Episodios</a></li>
-                    <li><a href="#section-venimos">Nosotros</a></li>
-                    <li><a href="#section-invitadas">Entrevistas</a></li>
-                    <li><a href="#section-temas">Tópicos</a></li>
+                    <li>
+                        <a class="light-font" href="#section-episodios"
+                            >Episodios</a
+                        >
+                    </li>
+                    <li>
+                        <a class="light-font" href="#section-venimos"
+                            >Nosotros</a
+                        >
+                    </li>
+                    <li>
+                        <a class="light-font" href="#section-invitadas"
+                            >Entrevistas</a
+                        >
+                    </li>
+                    <li>
+                        <a class="light-font" href="#section-temas">Tópicos</a>
+                    </li>
                 </ul>
             </nav>
         </header>
         <main>
             <section id="intro">
                 <h1>
-                    <div>Hello <span class="strikethrough">world</span></div>
+                    Hello <span class="strikethrough">world</span><br />
                     pale blue dot<span class="dot">.</span>
                 </h1>
                 <p class="mono">
                     Un podcast que explora el mundo de la programación. Nuevos
                     episodios, todos los jueves cada 15 días.
                 </p>
-                <button>Conocé más</button>
+                <button class="mono">Conocé más</button>
             </section>
             <section id="section-episodios">
-                <div class="container-background">
-                    <h2>Episodios</h2>
-                    <div class="container-flex">
-                        <div class="container-iframe">
-                            <iframe
-                                src="https://open.spotify.com/embed-podcast/episode/7AZZy2nJ4R9ZndHW0h2yxt"
-                                width="100%"
-                                height="232"
-                                frameborder="0"
-                                allowtransparency="true"
-                                allow="encrypted-media"
-                            ></iframe>
-                        </div>
-                        <div class="container-iframe">
-                            <iframe
-                                src="https://open.spotify.com/embed-podcast/episode/1ezdL2ivAGLwSE6Xbssxqt"
-                                width="100%"
-                                height="232"
-                                frameborder="0"
-                                allowtransparency="true"
-                                allow="encrypted-media"
-                            ></iframe>
-                        </div>
-                        <div class="container-iframe">
-                            <iframe
-                                src="https://open.spotify.com/embed-podcast/episode/3cWta1iiQSfvrdHaCbLkSD"
-                                width="100%"
-                                height="232"
-                                frameborder="0"
-                                allowtransparency="true"
-                                allow="encrypted-media"
-                            ></iframe>
-                        </div>
-                        <div class="container-iframe">
-                            <iframe
-                                src="https://open.spotify.com/embed/episode/5mddqHiI96V0ZMdMidn3WW"
-                                width="100%"
-                                height="232"
-                                frameborder="0"
-                                allowtransparency="true"
-                                allow="encrypted-media"
-                            ></iframe>
-                        </div>
-                    </div>
+                <h2 class="light-font">Episodios</h2>
+                <div class="container-flex container-iframes">
+                    <iframe
+                        src="https://open.spotify.com/embed-podcast/episode/7AZZy2nJ4R9ZndHW0h2yxt"
+                        allow="encrypted-media"
+                    ></iframe>
+                    <iframe
+                        src="https://open.spotify.com/embed-podcast/episode/1ezdL2ivAGLwSE6Xbssxqt"
+                        allow="encrypted-media"
+                    ></iframe>
+                    <iframe
+                        src="https://open.spotify.com/embed-podcast/episode/3cWta1iiQSfvrdHaCbLkSD"
+                        allow="encrypted-media"
+                    ></iframe>
+                    <iframe
+                        src="https://open.spotify.com/embed/episode/5mddqHiI96V0ZMdMidn3WW"
+                        allow="encrypted-media"
+                    ></iframe>
                 </div>
             </section>
             <section id="section-venimos">
@@ -112,13 +105,13 @@
                     />
                     <div>
                         <h2><span>De dónde</span> venimos</h2>
-                        <p>
+                        <p class="mono">
                             Our posturings, our imagined self-importance, the
                             delusion that we have some privileged position in
                             the Universe, are challenged by this point of pale
                             light.
                         </p>
-                        <p>
+                        <p class="mono">
                             Our planet is a lonely speck in the great enveloping
                             cosmic dark. In our obscurity, in all this vastness,
                             there is no hint that help will come from elsewhere
@@ -129,7 +122,7 @@
             </section>
             <section id="section-invitadas">
                 <h2>Invitadas&#47;os estelares</h2>
-                <div class="container-imgs">
+                <div class="container-flex container-imgs">
                     <img
                         src="images/grace-hopper.png"
                         alt="Foto de Grace Hopper, científica de la computación y militar estadounidense que desarrolló el primer compilador para un lenguaje de programación."
@@ -140,10 +133,10 @@
                         src="images/Margaret_Hamilton.png"
                         alt="Foto de Margaret Hamilton, científica computacional, matemática e ingeniera de Software y ex directora del MIT."
                     /><img
-                        src="images/An E.R.A.Univac 1103 computer in the 1950s.png"
+                        src="images/An_E.R.A.Univac_1103_computer_in_the_1950s.png"
                         alt="Operadoras junto al computador E.R.A. UNIVAC 1103 construído en octubre de 1953."
                     /><img
-                        src="images/Computer operators with an Eniac — the world’s first programmable general-purpose computer.png"
+                        src="images/Computer_operators_with_an_Eniac_—_the_world’s_first_programmable_general-purpose_computer.png"
                         alt="Operadoras trabajando con una ENIAC, una de las primeras computadoras de propósito general."
                     /><img
                         src="images/susan-kare.png"
@@ -153,42 +146,42 @@
             </section>
             <section id="section-temas">
                 <h2>Algunos de nuestros temas</h2>
-                <div>
+                <div id="subject-1">
                     <img
                         src="images/icon1.svg"
                         alt="Logo para el tópico 'trabajo remoto'."
                     />
-                    <p>Trabajo remoto</p>
+                    <p class="subject">Trabajo remoto</p>
                 </div>
-                <div>
+                <div id="subject-2">
                     <img
                         src="images/icon2.svg"
                         alt="Logo para el tópico 'repensando la programación'."
                     />
-                    <p>Repensando la programación</p>
+                    <p class="subject">Repensando la programación</p>
                 </div>
-                <div>
+                <div id="subject-3">
                     <img
                         src="images/icon3.svg"
                         alt="Logo para el tópico 'bases del código'."
                     />
-                    <p>Bases del código</p>
+                    <p class="subject">Bases del código</p>
                 </div>
-                <div>
+                <div id="subject-4">
                     <img
                         src="images/icon4.svg"
                         alt="Logo para el tópico 'seguridad informática'."
                     />
-                    <p>Seguridad informática</p>
+                    <p class="subject">Seguridad informática</p>
                 </div>
             </section>
             <section id="section-novedades">
-                <h2>¿Querés las últimas novedades?</h2>
-                <button>Escuchá los episodios</button>
+                <h2 class="light-font">¿Querés las últimas novedades?</h2>
+                <button class="mono">Escuchá los episodios</button>
             </section>
         </main>
         <footer>
-            <p>&#169; 2019- Hello blue pale dot</p>
+            <p class="mono">&#169; 2019- Hello blue pale dot</p>
             <div class="container-social">
                 <a href="https://spotify.com/" target="_blank"
                     ><i class="fab fa-spotify"></i

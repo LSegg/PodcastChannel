@@ -7,40 +7,43 @@ header {
         justify-content: space-between;
         align-items: center;
         /* Box Model */
-        padding: 10px 19px 10px 16px;
-    }
-    .times {
-        /* Layout */
-        display: none;
-    }
-    nav {
-        /* Layout */
-        display: none;
-        /* Visual Properties */
-        background-color: $color-background-blue;
-        ul {
-            li {
-                /* Box Model */
-                padding: 16px 0 0 16px;
-                &:last-of-type {
-                    /* Box Model */
-                    padding: 16px 0 24px 16px;
-                }
-                a {
-                    /* Typograpphy */
-                    color: $color-font-w;
-                    font-size: 1rem;
-                    text-transform: uppercase;
-                    letter-spacing: 0;
-                    line-height: 1.75rem;
-                }
-            }
-        }
+        padding: 0.625rem 1.1875rem 0.625rem 1rem; /* 10px 19px 10px 16px */
     }
     .checkbox {
         /* Layout */
         position: absolute;
         /* Visual Properties */
         opacity: 0;
+    }
+    .bars {
+        /* Animations */
+        transition: opacity 0.3s linear;
+    }
+    .times {
+        /* Layout */
+        display: none;
+        /* Animations */
+        transition: opacity 0.3s linear;
+    }
+    nav {
+        /* Layout */
+        display: none;
+        /* Box Model */
+        padding: 1rem 0 0 1rem;
+        /* Visual Properties */
+        background-color: $color-background-blue;
+        ul {
+            /* Typography */
+            list-style-type: none;
+            li {
+                /* Box Model */
+                padding-bottom: 1.5625rem;
+                a {
+                    /* Typograpphy */
+                    text-transform: uppercase;
+                    line-height: 1.75rem;
+                }
+            }
+        }
     }
 }

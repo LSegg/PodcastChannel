@@ -1,15 +1,16 @@
 footer {
     p {
-        margin-top: 24px;
+        /*Box Model*/
+        margin: 1.5rem 0 1rem 0;
+        /* Typography */
         text-align: center;
-        letter-spacing: 0;
-        line-height: 22px;
     }
-    .container-sociaL {
-        margin-top: 16px;
-        margin-bottom: 21px;
+    .container-social {
+        /* Layout */
         display: flex;
         justify-content: space-evenly;
         align-items: center;
+        /* Box Model */
+        margin-bottom: 1.9375em;
     }
 }

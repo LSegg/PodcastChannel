@@ -1,4 +1,3 @@
-/*Inheritance*/
 /* Fonts */
 /* Colors*/
 /* Breakpoints */
@@ -11,20 +10,80 @@
 /* Cleaning some default styles */
 * {
   /* Box Model */
-  margin: 0;
-  padding: 0;
   border: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
+/* General Settings */
 html {
-  font-size: 16px;
-  /* Default pixel size controlling ems and rems.*/
+  /* Box Model */
   max-width: 100%;
+  /* Typhography */
+  font-size: 16px;
+  /* 1em = 16px */
 }
 
 body {
+  /* Typhography */
+  color: #060a24;
+  font-family: "IBM Plex Sans", sans-serif;
+  line-height: 1.375rem;
+  letter-spacing: 0;
+}
+
+h1 {
+  /* Box Model */
+  margin-bottom: 1rem;
+  width: 100%;
+  /* Typography */
+  font-size: 2.25rem;
+  font-weight: 400;
+  line-height: 2.625rem;
+}
+
+h2 {
+  /* Box Model */
+  margin-left: 1rem;
+  /* Typhography */
+  font-size: 2.25rem;
+  font-weight: 400;
+  line-height: 2.625rem;
+}
+
+a {
+  /* Typhography */
+  text-decoration: none;
+}
+
+button {
+  /* Box Model */
+  width: 100%;
+  max-width: 18.75rem;
+  padding: 0.8125rem 0;
+  /* Visual Properties */
+  background-color: #00f3bb;
+  white-space: nowrap;
+  /* Typography */
+  font-size: 1rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+i {
+  color: #060a24;
+}
+
+p {
+  /* Typhography */
+  font-size: 0.875rem;
+}
+
+/* Classes */
+.container-flex {
   /* Layout */
   display: -webkit-box;
   display: -ms-flexbox;
@@ -33,28 +92,20 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  /* Typhography */
-  color: #060a24;
-  font-family: "IBM Plex Sans", sans-serif;
-  letter-spacing: 0;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-body .mono {
+.mono {
   font-family: "IBM Plex Mono", monospace;
-  font-size: 0.875rem;
 }
 
-.container {
-  /* Layout */
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+.light-font {
+  color: #ffffff;
 }
 
 header {
@@ -74,38 +125,8 @@ header .container-header {
       -ms-flex-align: center;
           align-items: center;
   /* Box Model */
-  padding: 10px 19px 10px 16px;
-}
-
-header .times {
-  /* Layout */
-  display: none;
-}
-
-header nav {
-  /* Layout */
-  display: none;
-  /* Visual Properties */
-  background-color: #0000ff;
-}
-
-header nav ul li {
-  /* Box Model */
-  padding: 16px 0 0 16px;
-}
-
-header nav ul li:last-of-type {
-  /* Box Model */
-  padding: 16px 0 24px 16px;
-}
-
-header nav ul li a {
-  /* Typograpphy */
-  color: #ffffff;
-  font-size: 1rem;
-  text-transform: uppercase;
-  letter-spacing: 0;
-  line-height: 1.75rem;
+  padding: 0.625rem 1.1875rem 0.625rem 1rem;
+  /* 10px 19px 10px 16px */
 }
 
 header .checkbox {
@@ -115,40 +136,49 @@ header .checkbox {
   opacity: 0;
 }
 
-h2 {
+header .bars {
+  /* Animations */
+  -webkit-transition: opacity 0.3s linear;
+  transition: opacity 0.3s linear;
+}
+
+header .times {
+  /* Layout */
+  display: none;
+  /* Animations */
+  -webkit-transition: opacity 0.3s linear;
+  transition: opacity 0.3s linear;
+}
+
+header nav {
+  /* Layout */
+  display: none;
   /* Box Model */
-  padding: 0px 0px 0px 16px;
-  /* Typhography */
-  font-size: 2.25rem;
-  font-weight: normal;
+  padding: 1rem 0 0 1rem;
+  /* Visual Properties */
+  background-color: #0000ff;
 }
 
-p {
-  /* Typhography */
-  font-family: "IBM Plex Mono", monospace;
-  font-size: 0.875rem;
-  letter-spacing: 0;
+header nav ul {
+  /* Typography */
+  list-style-type: none;
 }
 
-a {
-  /* Typhography */
-  text-decoration: none;
+header nav ul li {
+  /* Box Model */
+  padding-bottom: 1.5625rem;
+}
+
+header nav ul li a {
+  /* Typograpphy */
+  text-transform: uppercase;
+  line-height: 1.75rem;
 }
 
 #intro {
   /* Box Model */
-  padding: 29px 16px 24px 16px;
-}
-
-#intro h1 {
-  /* Box Model */
-  padding-bottom: 16px;
-  width: 100%;
-  /* Typography */
-  font-size: 36px;
-  font-weight: 400;
-  line-height: 1.16;
-  letter-spacing: 0;
+  margin: 1.8125rem 1rem 1.5rem 1rem;
+  /* 29px 16px 24px 16px */
 }
 
 #intro .strikethrough {
@@ -158,97 +188,45 @@ a {
 
 #intro p {
   /* Box Model */
-  padding-bottom: 36px;
-  /* Typography */
-  line-height: 1.375rem;
-}
-
-#intro button {
-  /* Box Model */
-  width: 100%;
-  max-width: 300px;
-  padding: 13px 0px;
-  /* Visual Properties */
-  background-color: #00f3bb;
-  /* Typography */
-  font-family: "IBM Plex Mono", monospace;
-  font-size: 16px;
-  font-weight: 600;
-  text-transform: uppercase;
-  text-align: center;
-}
-
-#intro button :hover {
-  cursor: pointer;
+  margin-bottom: 2.25rem;
 }
 
 #section-episodios {
-  /* Layout */
-  /* Box Model */
-  width: 100%;
-  padding-bottom: 143.5px;
+  padding: 4rem 0 8.96875rem 0;
+  /* 143.5px */
   /* Visual Properties */
   background-color: #0000ff;
   background-image: linear-gradient(225deg, #0000ff 0%, #0000a3 100%);
-  -webkit-clip-path: polygon(0 2.8%, 100% 0%, 100% 97.2%, 0% 100%);
-          clip-path: polygon(0 2.8%, 100% 0%, 100% 97.2%, 0% 100%);
-}
-
-#section-episodios .container-flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-clip-path: polygon(0 2.65%, 100% 0%, 100% 97.35%, 0% 100%);
+          clip-path: polygon(0 2.65%, 100% 0%, 100% 97.35%, 0% 100%);
 }
 
 #section-episodios h2 {
   /* Box Model */
-  padding: 64px 0 21px 16px;
-  /* Typography */
-  color: #ffffff;
-  font-weight: 400;
+  margin-bottom: 1.3125rem;
 }
 
-#section-episodios div.container-iframe {
-  /* Box Model */
-  width: 298px;
+#section-episodios .container-iframes {
+  width: 100%;
+}
+
+#section-episodios iframe {
+  width: 93.125%;
+  height: 14.5rem;
+  margin-bottom: 0.6875em;
+}
+
+#section-episodios iframe:last-of-type {
+  margin-bottom: 0;
 }
 
 #section-venimos {
-  /* Layout */
   /* Box Model */
   width: 100%;
 }
 
-#section-venimos .container-flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
 #section-venimos h2 {
   /* Layout */
-  /* Typography */
-  font-weight: 400;
 }
 
 #section-venimos h2 span {
@@ -257,22 +235,19 @@ a {
 
 #section-venimos p {
   /* Box Model */
-  padding: 8px 16px;
-  /* Typography */
-  letter-spacing: 0;
-  line-height: 22px;
+  margin: 0.5rem 1rem;
 }
 
 #section-venimos p:last-of-type {
-  padding-bottom: 54px;
+  margin-bottom: 3.375rem;
 }
 
 #section-venimos img {
   /* Layout */
   z-index: 2;
   /* Box Model */
-  margin-top: -95.5px;
-  width: 360px;
+  margin-top: -5.96875rem;
+  width: 112.5%;
 }
 
 #section-invitadas {
@@ -281,16 +256,8 @@ a {
 }
 
 #section-invitadas .container-imgs {
-  /* Layout */
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   /* Box Model */
-  padding-top: 14px;
+  margin-top: 0.875rem;
 }
 
 #section-invitadas img {
@@ -300,38 +267,47 @@ a {
 
 #section-temas {
   /* Box Model */
-  width: 100%;
+  margin-top: 3rem;
 }
 
 #section-temas h2 {
-  /* Typography */
-  font-weight: 400;
-  padding: 48px 16px 0 16px;
+  margin-bottom: 1.5rem;
 }
 
 #section-temas div {
-  padding: 36px;
+  /* Box Model */
+  margin-bottom: 3.25rem;
   /* Typography */
   text-align: center;
 }
 
-#section-temas div p {
+#section-temas div:first-of-type {
+  margin-bottom: 2.25rem;
+}
+
+#section-temas div:last-of-type {
+  margin-bottom: 2.625rem;
+}
+
+#section-temas div img {
+  margin: 0.8125rem 0;
+}
+
+#section-temas div .subject {
   /* Typography */
+  font-size: 1.5rem;
   font-weight: 600;
-  font-family: "IBM Plex Sans", sans-serif;
-  font-size: 24px;
 }
 
 footer p {
-  margin-top: 24px;
+  /*Box Model*/
+  margin: 1.5rem 0 1rem 0;
+  /* Typography */
   text-align: center;
-  letter-spacing: 0;
-  line-height: 22px;
 }
 
-footer .container-sociaL {
-  margin-top: 16px;
-  margin-bottom: 21px;
+footer .container-social {
+  /* Layout */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -341,50 +317,28 @@ footer .container-sociaL {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  /* Box Model */
+  margin-bottom: 1.9375em;
 }
 
 #section-novedades {
+  /* Box Model */
+  padding: 0 1rem;
   /* Visual Properties */
   background-color: #0000ff;
   background-image: linear-gradient(225deg, #0000ff 0%, #0000a3 100%);
-  -webkit-clip-path: polygon(0 2.8%, 100% 0%, 100% 97.2%, 0% 100%);
-          clip-path: polygon(0 2.8%, 100% 0%, 100% 97.2%, 0% 100%);
+  -webkit-clip-path: polygon(0 10%, 100% 0%, 100% 100%, 0% 100%);
+          clip-path: polygon(0 10%, 100% 0%, 100% 100%, 0% 100%);
   text-align: center;
 }
 
 #section-novedades h2 {
   /* Box Model */
-  padding: 64px 16px 36px 16px;
-  /* Typography */
-  color: #ffffff;
-  font-weight: 400;
+  padding-top: 4rem;
 }
 
 #section-novedades button {
   /* Box Model */
-  width: 100%;
-  max-width: 300px;
-  padding: 13px 0px;
-  margin: 36px 0px 67px 0px;
-  /* Visual Properties */
-  background-color: #00f3bb;
-  /* Typography */
-  font-family: "IBM Plex Mono", monospace;
-  font-size: 16px;
-  font-weight: 600;
-  text-transform: uppercase;
-  text-align: center;
+  margin: 2.25rem 0 4.1875em 0;
 }
-
-#section-novedades button :hover {
-  cursor: pointer;
-}
-
-/* CSS Grouped by type with the folliwing order:
-Inheritance
-Lauyout
-Box Model
-Visual Properties
-Typography
-Others */
 /*# sourceMappingURL=styles.css.map */

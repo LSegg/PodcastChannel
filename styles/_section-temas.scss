@@ -1,21 +1,27 @@
 #section-temas {
     /* Box Model */
-    width: 100%;
-
+    margin-top: 3rem;
     h2 {
-        /* Typography */
-        font-weight: 400;
-        padding: 48px 16px 0 16px;
+        margin-bottom: 1.5rem;
     }
     div {
-        padding: 36px;
+        /* Box Model */
+        margin-bottom: 3.25rem;
+        &:first-of-type {
+            margin-bottom: 2.25rem;
+        }
+        &:last-of-type {
+            margin-bottom: 2.625rem;
+        }
         /* Typography */
         text-align: center;
-        p {
+        img {
+            margin: 0.8125rem 0;
+        }
+        .subject {
             /* Typography */
+            font-size: 1.5rem;
             font-weight: 600;
-            font-family: $font-primary;
-            font-size: 24px;
         }
     }
 }

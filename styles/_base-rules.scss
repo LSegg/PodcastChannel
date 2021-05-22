@@ -1,34 +1,89 @@
 /* Cleaning some default styles */
 * {
     /* Box Model */
-    margin: 0;
-    padding: 0;
     border: 0;
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
+/* General Settings */
 html {
-    font-size: 16px; /* Default pixel size controlling ems and rems.*/
+    /* Box Model */
     max-width: 100%;
+    /* Typhography */
+    font-size: 16px; /* 1em = 16px */
 }
 
 body {
-    /* Layout */
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     /* Typhography */
     color: $color-font;
     font-family: $font-primary;
+    line-height: 1.375rem;
     letter-spacing: 0;
-    .mono {
-        font-family: $font-secondary;
-        font-size: 0.875rem;
-    }
 }
 
-.container {
+h1 {
+    /* Box Model */
+    margin-bottom: 1rem;
+    width: 100%;
+    /* Typography */
+    font-size: 2.25rem;
+    font-weight: 400;
+    line-height: 2.625rem;
+}
+
+h2 {
+    /* Box Model */
+    margin-left: 1rem;
+    /* Typhography */
+    font-size: 2.25rem;
+    font-weight: 400;
+    line-height: 2.625rem;
+}
+
+a {
+    /* Typhography */
+    text-decoration: none;
+}
+
+button {
+    /* Box Model */
+    width: 100%;
+    max-width: 18.75rem;
+    padding: 0.8125rem 0;
+    /* Visual Properties */
+    background-color: $color-btn;
+    white-space: nowrap;
+    /* Typography */
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+i {
+    color: $color-font;
+}
+
+p {
+    /* Typhography */
+    font-size: 0.875rem;
+}
+
+/* Classes */
+.container-flex {
     /* Layout */
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.mono {
+    font-family: $font-secondary;
+}
+
+.light-font {
+    color: $color-font-w;
 }
