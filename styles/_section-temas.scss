@@ -4,7 +4,12 @@
     h2 {
         margin-bottom: 1.5rem;
     }
-    .container-theme {
+    figure {
+        /* Layout*/
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
         /* Box Model */
         margin-bottom: 3.25rem;
         &:first-of-type {
@@ -18,20 +23,17 @@
         img {
             margin: 0.8125rem 0;
         }
-        .subject {
-            /* Typography */
-            font-size: 1.5rem;
-            font-weight: 600;
-        }
     }
 }
 
 /* Desktop */
 @media screen and (min-width: $breakpoint-xl) {
     #section-temas {
+        /* Layout */
+        align-items: start;
         /* Box Model */
         margin: 4rem 12.5rem 2.125rem 12.5rem;
-        .container-theme {
+        figure {
             /* Box Model */
             margin-bottom: 0;
             &:first-of-type {

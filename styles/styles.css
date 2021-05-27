@@ -87,6 +87,13 @@ p {
   font-size: 0.875rem;
 }
 
+figcaption {
+  /* Typography */
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+}
+
 /* Classes */
 .container-flex {
   /* Layout */
@@ -506,42 +513,54 @@ header input[type="checkbox"]:checked ~ nav {
   margin-bottom: 1.5rem;
 }
 
-#section-temas .container-theme {
+#section-temas figure {
+  /* Layout*/
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   /* Box Model */
   margin-bottom: 3.25rem;
   /* Typography */
   text-align: center;
 }
 
-#section-temas .container-theme:first-of-type {
+#section-temas figure:first-of-type {
   margin-bottom: 2.25rem;
 }
 
-#section-temas .container-theme:last-of-type {
+#section-temas figure:last-of-type {
   margin-bottom: 0;
 }
 
-#section-temas .container-theme img {
+#section-temas figure img {
   margin: 0.8125rem 0;
-}
-
-#section-temas .container-theme .subject {
-  /* Typography */
-  font-size: 1.5rem;
-  font-weight: 600;
 }
 
 /* Desktop */
 @media screen and (min-width: 90em) {
   #section-temas {
+    /* Layout */
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
     /* Box Model */
     margin: 4rem 12.5rem 2.125rem 12.5rem;
   }
-  #section-temas .container-theme {
+  #section-temas figure {
     /* Box Model */
     margin-bottom: 0;
   }
-  #section-temas .container-theme:first-of-type {
+  #section-temas figure:first-of-type {
     margin-bottom: 0;
   }
   #section-temas span {
