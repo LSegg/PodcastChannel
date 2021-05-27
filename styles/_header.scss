@@ -79,32 +79,42 @@ header {
 /* Desktop */
 @media screen and (min-width: $breakpoint-xl) {
     header {
+        /* Box Model */
         padding: 0 6.25rem;
         #logo-podcast {
+            /* Box Model */
             width: 2.25rem;
             margin: 1.375rem 0;
         }
         input,
         label {
+            /* Layout */
             display: none;
         }
         nav {
-            width: fit-content;
+            /* Layout */
             position: static;
-            visibility: visible;
+            /* Box Model */
+            width: fit-content;
             margin: 1.625rem 0;
             padding: 0;
+            /* Visual Properties */
+            visibility: visible;
             background-color: $color-font-w;
             ul {
+                /* Layout */
                 flex-direction: row;
                 justify-content: space-between;
                 li {
+                    /* Box Model */
                     padding: 0;
                     margin-left: 3rem;
                     &:first-of-type {
+                        /* Box Model */
                         margin-left: 0;
                     }
                     a {
+                        /* Typograpphy */
                         color: $color-font;
                     }
                 }

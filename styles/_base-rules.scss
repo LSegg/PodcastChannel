@@ -63,6 +63,7 @@ button {
 }
 
 i {
+    /* Typhography */
     color: $color-font;
 }
 
@@ -81,9 +82,33 @@ p {
 }
 
 .mono {
+    /* Typhography */
     font-family: $font-secondary;
 }
 
 .light-font {
+    /* Typhography */
     color: $color-font-w;
+}
+
+/* Desktop */
+@media screen and (min-width: $breakpoint-xl) {
+    p {
+        /* Typhography */
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+    button {
+        /* Typhography */
+        font-size: 1.25rem;
+        line-height: 1.5rem;
+        &:hover {
+            color: $color-font-w;
+            background-image: linear-gradient(
+                225deg,
+                $color-btn-hover-blue 0%,
+                $color-btn-hover-green 100%
+            );
+        }
+    }
 }
