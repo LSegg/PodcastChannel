@@ -19,6 +19,26 @@
         z-index: 2;
         /* Box Model */
         margin-top: -5.96875rem;
-        width: 112.5%;
+        width: 22.5rem;
+    }
+}
+
+/* Desktop */
+@media screen and (min-width: $breakpoint-xl) {
+    #section-venimos {
+        h2 {
+            span {
+                display: inline;
+            }
+        }
+        img {
+            /* Box Model */
+            margin-top: -10.5375em;
+            width: 28.6rem;
+        }
+        .container-text {
+            /* Layout */
+            display: inline-block;
+        }
     }
 }

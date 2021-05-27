@@ -1,7 +1,8 @@
 footer {
+    margin: 1.5rem 0 1.9375rem 0;
     p {
         /*Box Model*/
-        margin: 1.5rem 0 1rem 0;
+        margin-bottom: 1rem;
         /* Typography */
         text-align: center;
     }
@@ -10,7 +11,24 @@ footer {
         display: flex;
         justify-content: space-evenly;
         align-items: center;
-        /* Box Model */
-        margin-bottom: 1.9375em;
+    }
+}
+
+/* Desktop */
+@media screen and (min-width: $breakpoint-xl) {
+    footer {
+        /* Layout */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        /*Box Model*/
+        margin: 2.25rem 6.25rem 1.9375rem 6.25rem;
+        p {
+            margin: 0;
+        }
+        .container-social {
+            /*Box Model*/
+            width: 14.625rem;
+        }
     }
 }
