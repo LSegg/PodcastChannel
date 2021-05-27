@@ -469,7 +469,7 @@ header input[type="checkbox"]:checked ~ nav {
   #section-venimos img {
     /* Box Model */
     margin-top: -10.5375em;
-    width: 28.6rem;
+    width: 112.5%;
   }
   #section-venimos .container-text {
     /* Layout */
