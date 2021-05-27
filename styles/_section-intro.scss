@@ -9,4 +9,29 @@
         /* Box Model */
         margin-bottom: 2.25rem;
     }
+    .desktop {
+        display: none;
+    }
+}
+
+/* Desktop */
+@media screen and (min-width: $breakpoint-xl) {
+    h1 {
+        margin-top: 7.5rem;
+        margin-left: 11.25rem;
+        font-size: 4rem;
+        font-weight: 400;
+    }
+    br {
+        display: none;
+    }
+    .dot {
+        color: $color-desktop-dot;
+    }
+    .desktop {
+        display: block;
+    }
+    .mobile {
+        display: none;
+    }
 }
