@@ -1,13 +1,16 @@
 .SectionVenimos {
     // Box model
     width: 100%;
+    //Visual Properties
+    overflow: hidden;
 }
 .SectionVenimos-img {
     // Layout
     z-index: 2;
+    position: relative;
+    top: toRem(-95.5px);
     // Box model
-    margin-top: toRem(-95.5px);
-    width: toRem(360px);
+    width: 112.5%;
 }
 .SectionVenimos-p {
     // Box model
@@ -16,13 +19,16 @@
         margin-bottom: toRem(54px);
     }
 }
-/* Desktop */
-@media screen and (min-width: $breakpoint-xl) {
+/* Responsive */
+@media screen and (min-width: $breakpoint-lg-tablet) {
     .SectionVenimos {
+        flex-direction: row;
+        flex-wrap: wrap;
         .SectionVenimos-img {
+            // Layout
+            top: toRem(-168.6px);
             // Box model
-            margin-top: toRem(-168.6px);
-            width: 112.5%;
+            width: toRem(457.6px);
         }
         .SectionVenimos-textContainer {
             // Layout

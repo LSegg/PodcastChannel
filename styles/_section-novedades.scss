@@ -20,8 +20,8 @@
     // Box model
     margin: toRem(36px) 0 toRem(67px) 0;
 }
-/* Desktop */
-@media screen and (min-width: $breakpoint-xl) {
+/* Responsive */
+@media screen and (min-width: $breakpoint-desktop) {
     .SectionNovedades {
         // Box model
         padding: toRem(213px) 0 toRem(151px) 0;

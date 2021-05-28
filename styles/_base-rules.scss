@@ -90,12 +90,19 @@ body {
     // Typography
     color: $color-font-light;
 }
-/* Desktop */
-@media screen and (min-width: $breakpoint-xl) {
+/* Responsive */
+@media screen and (min-width: $breakpoint-lg-tablet) {
     .isBlue {
         // Typography
         color: $color-dot-desktop;
     }
+    .isTitle {
+        // Typography
+        font-size: toRem(64px);
+        font-weight: 400;
+    }
+}
+@media screen and (min-width: $breakpoint-desktop) {
     .isButton {
         // Typography
         font-size: toRem(20px);
@@ -123,10 +130,5 @@ body {
     .isSubtitle {
         // Typography
         font-size: toRem(48px);
-    }
-    .isTitle {
-        // Typography
-        font-size: toRem(64px);
-        font-weight: 400;
     }
 }

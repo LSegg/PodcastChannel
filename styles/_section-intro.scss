@@ -9,8 +9,13 @@
 .SectionIntro-p--desktop {
     display: none;
 }
-/* Desktop */
-@media screen and (min-width: $breakpoint-xl) {
+/* Responsive */
+@media screen and (min-width: $breakpoint-lg-tablet) {
+    .SectionIntro-span--title {
+        display: inline;
+    }
+}
+@media screen and (min-width: $breakpoint-desktop) {
     .SectionIntro {
         // Box model
         margin: toRem(120px) 0 toRem(5px) toRem(180px);

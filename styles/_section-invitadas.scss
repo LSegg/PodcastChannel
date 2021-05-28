@@ -10,8 +10,18 @@
     // Box model
     width: 100%;
 }
-/* Desktop */
-@media screen and (min-width: $breakpoint-xl) {
+/* Responsive */
+@media screen and (min-width: $breakpoint-sm-tablet) {
+    .SectionInvitadas-imgContainer {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .SectionInvitadas-img {
+        // Box model
+        width:  calc(100% / 2);
+    }
+}
+@media screen and (min-width: $breakpoint-desktop) {
     .SectionInvitadas-h2 {
         // Box model
         margin: 0 0 toRem(36px) toRem(200px);

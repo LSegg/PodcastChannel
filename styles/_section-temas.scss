@@ -31,8 +31,17 @@
     font-weight: 600;
     text-align: center;
 }
-/* Desktop */
-@media screen and (min-width: $breakpoint-xl) {
+/* Responsive */
+@media screen and (min-width: $breakpoint-sm-tablet) {
+    .SectionTemas-figureContainer {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .SectionTemas-figure {
+        width: calc(100% / 2);
+    }
+}
+@media screen and (min-width: $breakpoint-desktop) {
     .SectionTemas {
         // Layout
         align-items: start;
@@ -41,6 +50,7 @@
     }
     .SectionTemas-figure {
         // Box model
+        width: calc(100% / 4);
         margin-bottom: 0;
         &:first-of-type {
             margin-bottom: 0;

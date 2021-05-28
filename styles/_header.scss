@@ -71,8 +71,8 @@
         color: $color-a-active;
     }
 }
-/* Desktop */
-@media screen and (min-width: $breakpoint-xl) {
+/* Responsive */
+@media screen and (min-width: $breakpoint-lg-tablet) {
     .Header {
         // Box model
         padding: 0 toRem(100px);

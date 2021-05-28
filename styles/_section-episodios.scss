@@ -28,8 +28,27 @@
         margin-bottom: 0;
     }
 }
-/* Desktop */
-@media screen and (min-width: $breakpoint-xl) {
+/* Responsive */
+@media screen and (min-width: $breakpoint-lg-tablet) {
+    .SectionEpisodios-iFramesContainer {
+        // Layout
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        // Box model
+        padding: 0 toRem(100px);
+    }
+    .SectionEPisodios-iframe {
+        // Box model
+        width: 47%;
+        margin-bottom: toRem(72px);
+        &:last-of-type {
+            // Box model
+            margin-bottom: toRem(72px);
+        }
+    }
+}
+@media screen and (min-width: $breakpoint-desktop) {
     .SectionEpisodios {
         // Box model
         padding: toRem(186px) 0 toRem(160.6px) 0;
@@ -44,20 +63,5 @@
     .SectionEpisodios-h2 {
         // Box model
         margin: 0 0 toRem(26px) toRem(200px);
-    }
-    .SectionEpisodios-iFramesContainer {
-        // Layout
-        justify-content: space-between;
-        // Box model
-        padding: 0 toRem(100px);
-    }
-    .SectionEPisodios-iframe {
-        // Box model
-        width: 47%;
-        margin-bottom: toRem(72px);
-        &:last-of-type {
-            // Box model
-            margin-bottom: toRem(72px);
-        }
     }
 }
