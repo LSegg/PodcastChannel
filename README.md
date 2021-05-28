@@ -16,6 +16,10 @@ of a provided user interface and developing functionalities of content reproduct
     * *px* for font root element and borders,
     * *%* for widths,
     * *rem* for the rest.
+* Naming criteria:
+    * `.TitleCase` modules
+    * `.-camelCase` elements
+    * `--camelCase` modifiers
 * Properties order criteria: grouped by type as follows -->
     * Inheritance
     * Layout

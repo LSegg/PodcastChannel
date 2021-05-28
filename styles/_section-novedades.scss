@@ -1,4 +1,4 @@
-#section-novedades {
+.SectionNovedades {
     // Box model
     padding: 0 toRem(16px);
     // Visual properties
@@ -10,20 +10,19 @@
     );
     clip-path: polygon(0 10%, 100% 0%, 100% 100%, 0% 100%);
     text-align: center;
-    h2 {
-        // Box model
-        margin: 0;
-        padding-top: toRem(64px);
-    }
-    button {
-        // Box model
-        margin: toRem(36px) 0 toRem(67px) 0;
-    }
 }
-
+.SectionNovedades-h2 {
+    // Box model
+    margin: 0;
+    padding-top: toRem(64px);
+}
+.SectionNovedades-btn {
+    // Box model
+    margin: toRem(36px) 0 toRem(67px) 0;
+}
 /* Desktop */
 @media screen and (min-width: $breakpoint-xl) {
-    #section-novedades {
+    .SectionNovedades {
         // Box model
         padding: toRem(213px) 0 toRem(151px) 0;
         // Visual properties

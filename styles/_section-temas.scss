@@ -1,48 +1,49 @@
-#section-temas {
+.SectionTemas {
     // Box model
     margin: toRem(48px) 0 toRem(42px) 0;
-    h2 {
-        margin-bottom: toRem(24px);
-    }
-    figure {
-        // Layout
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        // Box model
-        margin-bottom: toRem(52px);
-        &:first-of-type {
-            margin-bottom: toRem(36px);
-        }
-        &:last-of-type {
-            margin-bottom: 0;
-        }
-        // Typography
-        text-align: center;
-        img {
-            margin: toRem(13px) 0;
-        }
-    }
 }
-
+.SectionTemas-h2 {
+    margin-bottom: toRem(24px);
+}
+.SectionTemas-figure {
+    // Layout
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    // Box model
+    margin-bottom: toRem(52px);
+    &:first-of-type {
+        margin-bottom: toRem(36px);
+    }
+    &:last-of-type {
+        margin-bottom: 0;
+    }
+    // Typography
+    text-align: center;
+}
+.SectionTemas-img {
+    margin: toRem(13px) 0;
+}
+.SectionTemas-figcaption {
+    // Typography
+    font-size: toRem(24px);
+    font-weight: 600;
+    text-align: center;
+}
 /* Desktop */
 @media screen and (min-width: $breakpoint-xl) {
-    #section-temas {
+    .SectionTemas {
         // Layout
         align-items: start;
         // Box model
         margin: toRem(64px) toRem(200px) toRem(34px) toRem(200px);
-        figure {
-            // Box model
+    }
+    .SectionTemas-figure {
+        // Box model
+        margin-bottom: 0;
+        &:first-of-type {
             margin-bottom: 0;
-            &:first-of-type {
-                margin-bottom: 0;
-            }
-        }
-        span {
-            // Layout
-            display: block;
         }
     }
 }

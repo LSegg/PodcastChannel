@@ -19,96 +19,116 @@
     <body>
         <header class="Header">
             <img
-                class="Header-imageLogo"
+                class="Header-imgLogo"
                 src="images/logo.svg"
                 alt="Logo del podcast."
             />
             <input
+                class="Header-checkbox"
                 type="checkbox"
                 name="checkbox"
-                class="checkbox"
                 id="checkbox"
             />
-            <label for="checkbox" class="bars"
-                ><i class="fas fa-bars"></i
+            <label class="Header-label Header-label--bars" for="checkbox"
+                ><i class="fas fa-bars isIdiomaticText"></i
             ></label>
-            <label for="checkbox" class="times"
-                ><i class="fas fa-times"></i
+            <label class="Header-label Header-label--times" for="checkbox"
+                ><i class="fas fa-times isIdiomaticText"></i
             ></label>
-            <nav class="mono">
-                <ul>
-                    <li>
-                        <a href="#section-episodios">Episodios</a>
+            <nav class="Header-nav isMono">
+                <ul class="Header-ul isFlex">
+                    <li class="Header-li">
+                        <a class="Header-a isLink" href="#section-episodios"
+                            >Episodios</a
+                        >
                     </li>
-                    <li>
-                        <a href="#section-venimos">Nosotros</a>
+                    <li class="Header-li">
+                        <a class="Header-a isLink" href="#section-venimos">Nosotros</a>
                     </li>
-                    <li>
-                        <a href="#section-invitadas">Entrevistas</a>
+                    <li class="Header-li">
+                        <a class="Header-a isLink" href="#section-invitadas"
+                            >Entrevistas</a
+                        >
                     </li>
-                    <li>
-                        <a href="#section-temas">Tópicos</a>
+                    <li class="Header-li">
+                        <a class="Header-a isLink" href="#section-temas">Tópicos</a>
                     </li>
                 </ul>
             </nav>
         </header>
 
         <main>
-            <section id="intro">
-                <h1>
-                    Hello <span class="strikethrough">world</span
-                    ><br class="title" />
-                    pale blue dot<span class="dot">.</span>
+            <section class="SectionIntro" id="intro">
+                <h1 class="isTitle">
+                    <span class="isNewLine"
+                        >Hello <span class="isStrikethrough">world</span></span
+                    >
+                    pale blue dot<span class="isBlue">.</span>
                 </h1>
-                <p class="mono mobile">
+                <p class="SectionIntro-p SectionIntro-p--mobile isMono isText">
                     Un podcast que explora el mundo de la programación. Nuevos
                     episodios, todos los jueves cada 15 días.
                 </p>
-                <p class="mono desktop">
-                    El portal de podcasts que explora el mundo de la
-                    programación y<br />la tecnología. Nuevos episodios, todos
-                    los jueves cada 15 días.
+                <p class="SectionIntro-p SectionIntro-p--desktop isMono isText">
+                    <span class="isNewLine"
+                        >El portal de podcasts que explora el mundo de la
+                        programación y</span
+                    >
+                    la tecnología. Nuevos episodios, todos los jueves cada 15
+                    días.
                 </p>
-                <button class="mono">Conocé más</button>
+                <button class="isButton isMono">Conocé más</button>
             </section>
 
-            <section id="section-episodios">
-                <h2 class="light-font">Episodios</h2>
-                <div class="container-flex container-iframes">
+            <section class="SectionEpisodios" id="section-episodios">
+                <h2 class="SectionEpisodios-h2 isSubtitle isLightFont">
+                    Episodios
+                </h2>
+                <div class="isFlex SectionEpisodios-iFramesContainer">
                     <iframe
+                        class="SectionEPisodios-iframe"
                         src="https://open.spotify.com/embed-podcast/episode/7AZZy2nJ4R9ZndHW0h2yxt"
                         allow="encrypted-media"
                     ></iframe>
                     <iframe
+                        class="SectionEPisodios-iframe"
                         src="https://open.spotify.com/embed-podcast/episode/1ezdL2ivAGLwSE6Xbssxqt"
                         allow="encrypted-media"
                     ></iframe>
                     <iframe
+                        class="SectionEPisodios-iframe"
                         src="https://open.spotify.com/embed-podcast/episode/3cWta1iiQSfvrdHaCbLkSD"
                         allow="encrypted-media"
                     ></iframe>
                     <iframe
+                        class="SectionEPisodios-iframe"
                         src="https://open.spotify.com/embed/episode/31VyAQAwBiKoHVoYUCEzjQ"
                         allow="encrypted-media"
                     ></iframe>
                 </div>
             </section>
 
-            <section id="section-venimos" class="container-flex">
+            <section class="SectionVenimos isFlex" id="section-venimos">
                 <img
+                    class="SectionVenimos-img"
                     src="images/phone.png"
                     alt="Pantalla móvil de un celular donde
                 se observa una noticia periodística de la historia de las
                 mujeres en el mundo de la programación."
                 />
-                <div class="container-text">
-                    <h2><span>De dónde</span> venimos</h2>
-                    <p class="mono">
+                <div class="SectionVenimos-textContainer">
+                    <h2 class="isSubtitle">
+                        <span class="SectionVenimos-span isNewLine"
+                            >De dónde</span
+                        >
+                        venimos
+                    </h2>
+                    <p class="SectionVenimos-p isMono isText">
                         Our posturings, our imagined self-importance, the
                         delusion that we have some privileged position in the
                         Universe, are challenged by this point of pale light.
                     </p>
-                    <p class="mono">
+                    <p class="SectionVenimos-p isMono isText">
                         Our planet is a lonely speck in the great enveloping
                         cosmic dark. In our obscurity, in all this vastness,
                         there is no hint that help will come from elsewhere to
@@ -117,95 +137,111 @@
                 </div>
             </section>
 
-            <section id="section-invitadas">
-                <h2>Invitadas&#47;os estelares</h2>
-                <div class="container-flex container-imgs">
+            <section class="SectionInvitadas" id="section-invitadas">
+                <h2 class="SectionInvitadas-h2 isSubtitle">
+                    Invitadas&#47;os estelares
+                </h2>
+                <div class="isFlex SectionInvitadas-imgContainer">
                     <img
+                        class="SectionInvitadas-img"
                         src="images/grace-hopper.png"
                         alt="Foto de Grace Hopper, científica de la computación y militar estadounidense que desarrolló el primer compilador para un lenguaje de programación."
                     /><img
+                        class="SectionInvitadas-img"
                         src="images/Katie-Bouman.png"
                         alt="Foto de Katie Bouman, científica de la computación estadounidense que investiga sistemas para formación de imágenes por ordenador."
                     /><img
+                        class="SectionInvitadas-img"
                         src="images/Margaret_Hamilton.png"
                         alt="Foto de Margaret Hamilton, científica computacional, matemática e ingeniera de Software y ex directora del MIT."
                     /><img
+                        class="SectionInvitadas-img"
                         src="images/An_E.R.A.Univac_1103_computer_in_the_1950s.png"
                         alt="Operadoras junto al computador E.R.A. UNIVAC 1103 construído en octubre de 1953."
                     /><img
+                        class="SectionInvitadas-img"
                         src="images/Computer_operators_with_an_Eniac_—_the_world’s_first_programmable_general-purpose_computer.png"
                         alt="Operadoras trabajando con una ENIAC, una de las primeras computadoras de propósito general."
                     /><img
+                        class="SectionInvitadas-img"
                         src="images/susan-kare.png"
                         alt="Foto de Susan Kare, artista y diseñadora gráfica estadounidense creadora de la iconografía de Apple Macintosh."
                     />
                 </div>
             </section>
 
-            <section id="section-temas">
-                <h2>Algunos de nuestros temas</h2>
-                <div class="container-flex">
-                    <figure>
+            <section class="SectionTemas" id="section-temas">
+                <h2 class="SectionTemas-h2 isSubtitle">
+                    Algunos de nuestros temas
+                </h2>
+                <div class="isFlex">
+                    <figure class="SectionTemas-figure">
                         <img
+                            class="SectionTemas-img"
                             src="images/icon1.svg"
                             alt="Logo para el tópico 'trabajo remoto'."
                         />
-                        <figcaption>Trabajo remoto</figcaption>
+                        <figcaption class="SectionTemas-figcaption">Trabajo remoto</figcaption>
                     </figure>
-                    <figure>
+                    <figure class="SectionTemas-figure">
                         <img
+                            class="SectionTemas-img"
                             src="images/icon2.svg"
                             alt="Logo para el tópico 'repensando la programación'."
                         />
-                        <figcaption>
-                            Repensando <span>la programación</span>
+                        <figcaption class="SectionTemas-figcaption">
+                            Repensando <span class="isNewLine">la programación</span>
                         </figcaption>
                     </figure>
-                    <figure>
+                    <figure class="SectionTemas-figure">
                         <img
+                            class="SectionTemas-img"
                             src="images/icon3.svg"
                             alt="Logo para el tópico 'bases del código'."
                         />
-                        <figcaption>Bases del código</figcaption>
+                        <figcaption class="SectionTemas-figcaption">Bases del código</figcaption>
                     </figure>
-                    <figure>
+                    <figure class="SectionTemas-figure">
                         <img
+                            class="SectionTemas-img"
                             src="images/icon4.svg"
                             alt="Logo para el tópico
                         'seguridad informática'."
                         />
-                        <figcaption>
+                        <figcaption class="SectionTemas-figcaption">
                             Seguridad <span>informática</span>
                         </figcaption>
                     </figure>
                 </div>
             </section>
 
-            <section id="section-novedades">
-                <h2 class="light-font">¿Querés las últimas novedades?</h2>
-                <button class="mono">Escuchá los episodios</button>
+            <section class="SectionNovedades" id="section-novedades">
+                <h2 class="SectionNovedades-h2 isSubtitle isLightFont">
+                    ¿Querés las últimas novedades?
+                </h2>
+                <button class="SectionNovedades-btn isButton isMono">Escuchá los episodios</button>
             </section>
         </main>
 
-        <footer>
-            <p class="mono">
-                <i class="far fa-copyright"></i> 2019- Hello blue pale dot
+        <footer class="Footer">
+            <p class="Footer-p isMono isText">
+                <i class="far fa-copyright isIdiomaticText"></i> 2019- Hello blue pale dot
             </p>
-            <div class="container-social">
-                <a href="https://spotify.com/" target="_blank"
-                    ><i class="fab fa-spotify"></i
+            <div class="Footer-aContainer">
+                <a class="isLink" href="https://spotify.com/" target="_blank"
+                    ><i class="fab fa-spotify isIdiomaticText"></i
                 ></a>
-                <a href="https://instagram.com/" target="_blank"
-                    ><i class="fab fa-instagram"></i
+                <a class="isLink" href="https://instagram.com/" target="_blank"
+                    ><i class="fab fa-instagram isIdiomaticText"></i
                 ></a>
-                <a href="https://twitter.com/" target="_blank"
-                    ><i class="fab fa-twitter"></i
+                <a class="isLink" href="https://twitter.com/" target="_blank"
+                    ><i class="fab fa-twitter isIdiomaticText"></i
                 ></a>
-                <a href="https://facebook.com/" target="_blank"
-                    ><i class="fab fa-facebook"></i
+                <a class="isLink" href="https://facebook.com/" target="_blank"
+                    ><i class="fab fa-facebook isIdiomaticText"></i
                 ></a>
-                <a href="https://web.telegram.org/" target="_blank"
-                    ><i class="fab fa-telegram"></i
+                <a class="isLink" href="https://web.telegram.org/" target="_blank"
+                    ><i class="fab fa-telegram isIdiomaticText"></i
                 ></a>
             </div>
         </footer>

@@ -6,118 +6,114 @@
     // Box Model
     width: 100%;
     padding: toRem(10px) toRem(19px) toRem(10px) toRem(16px);
-    .checkbox {
-        // Layout
-        position: absolute;
-        // Visual properties
-        opacity: 0;
-    }
-    .times {
-        // Layout
-        position: absolute;
-        top: 0.7rem;
-        right: 1.3rem;
-        // Visual properties
-        opacity: 0;
-    }
-    nav {
-        // Layout
-        display: inline-block;
-        position: absolute;
-        top: toRem(44px);
-        left: 0;
-        // Box model
-        padding: toRem(16px) 0 0 toRem(16px);
-        width: 100%;
-        // Visual properties
-        background-color: $color-background-blue;
-        visibility: hidden;
-        ul {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-evenly;
-            align-items: flex-start;
-            // Typography
-            list-style-type: none;
-            li {
-                // Box model
-                padding-bottom: toRem(24px);
-                a {
-                    // Typography
-                    color: $color-font-light;
-                    text-transform: uppercase;
-                    line-height: toRem(28px);
-                    &:hover {
-                        color: $color-btn;
-                        text-decoration: line-through;
-                        cursor: pointer;
-                        font-weight: 500;
-                    }
-                    &:active {
-                        color: $color-a-active;
-                    }
-                }
-            }
-        }
-    }
     /* Burger menu functionality */
-    input[type="checkbox"]:checked ~ .bars {
+    input[type="checkbox"]:checked ~ .Header-label--bars {
         // Visual properties
         opacity: 0%;
     }
-    input[type="checkbox"]:checked ~ .times {
+    input[type="checkbox"]:checked ~ .Header-label--times {
         // Visual properties
         opacity: 100%;
     }
-    input[type="checkbox"]:checked ~ nav {
+    input[type="checkbox"]:checked ~ .Header-nav {
         // Layout
         visibility: visible;
     }
 }
-
+.Header-checkbox {
+    // Layout
+    position: absolute;
+    // Visual properties
+    opacity: 0;
+}
+.Header-label--times {
+    // Layout
+    position: absolute;
+    top: 0.7rem;
+    right: 1.3rem;
+    // Visual properties
+    opacity: 0;
+}
+.Header-nav {
+    // Layout
+    display: inline-block;
+    position: absolute;
+    top: toRem(44px);
+    left: 0;
+    // Box model
+    padding: toRem(16px) 0 0 toRem(16px);
+    width: 100%;
+    // Visual properties
+    background-color: $color-background-blue;
+    visibility: hidden;
+}
+.Header-ul {
+    align-items: flex-start;
+    // Typography
+    list-style-type: none;
+}
+.Header-li {
+    // Box model
+    padding-bottom: toRem(24px);
+}
+.Header-a {
+    // Typography
+    color: $color-font-light;
+    text-transform: uppercase;
+    line-height: toRem(28px);
+    &:hover {
+        color: $color-btn;
+        text-decoration: line-through;
+        cursor: pointer;
+        font-weight: 500;
+    }
+    &:active {
+        color: $color-a-active;
+    }
+}
 /* Desktop */
 @media screen and (min-width: $breakpoint-xl) {
     .Header {
         // Box model
         padding: 0 toRem(100px);
-        .Header-imageLogo {
+    }
+    .Header-imgLogo {
+        // Box model
+        width: toRem(36px);
+        margin: toRem(22px) 0;
+    }
+    .Header-checkbox,
+    .Header-label {
+        // Layout
+        display: none;
+    }
+    .Header-nav {
+        // Layout
+        position: static;
+        // Box model
+        width: fit-content;
+        margin: toRem(26px) 0;
+        padding: 0;
+        // Visual properties
+        visibility: visible;
+        background-color: $color-font-light;
+    }
+    .Header-ul {
+        // Layout
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .Header-li {
+        // Box model
+        padding: 0;
+        margin-left: toRem(48px);
+        &:first-of-type {
             // Box model
-            width: toRem(36px);
-            margin: toRem(22px) 0;
+            margin-left: 0;
         }
-        input,
-        label {
-            // Layout
-            display: none;
-        }
-        nav {
-            // Layout
-            position: static;
-            // Box model
-            width: fit-content;
-            margin: toRem(26px) 0;
-            padding: 0;
-            // Visual properties
-            visibility: visible;
-            background-color: $color-font-light;
-            ul {
-                // Layout
-                flex-direction: row;
-                justify-content: space-between;
-                li {
-                    // Box model
-                    padding: 0;
-                    margin-left: toRem(48px);
-                    &:first-of-type {
-                        // Box model
-                        margin-left: 0;
-                    }
-                    a {
-                        // Typography
-                        color: $color-font;
-                    }
-                }
-            }
-        }
+    }
+    .Header-a {
+        // Typography
+        color: $color-font;
     }
 }

@@ -1,4 +1,4 @@
-#section-episodios {
+.SectionEpisodios {
     // Box model
     padding: toRem(64px) 0 toRem(143.5px) 0;
     // Visual properties
@@ -9,29 +9,28 @@
         $color-dark-blue 100%
     );
     clip-path: polygon(0 2.65%, 100% 0%, 100% 97.35%, 0% 100%);
-    h2 {
+}
+.SectionEpisodios-h2 {
+    // Box model
+    margin-bottom: toRem(21px);
+}
+.SectionEpisodios-iFramesContainer {
+    // Box model
+    width: 100%;
+}
+.SectionEPisodios-iframe {
+    // Box model
+    width: 93.125%;
+    height: toRem(232px);
+    margin-bottom: toRem(11px);
+    &:last-of-type {
         // Box model
-        margin-bottom: toRem(21px);
-    }
-    .container-iframes {
-        // Box model
-        width: 100%;
-    }
-    iframe {
-        // Box model
-        width: 93.125%;
-        height: toRem(232px);
-        margin-bottom: toRem(11px);
-        &:last-of-type {
-            // Box model
-            margin-bottom: 0;
-        }
+        margin-bottom: 0;
     }
 }
-
 /* Desktop */
 @media screen and (min-width: $breakpoint-xl) {
-    #section-episodios {
+    .SectionEpisodios {
         // Box model
         padding: toRem(186px) 0 toRem(160.6px) 0;
         // Visual properties
@@ -41,24 +40,24 @@
             $color-dark-blue 100%
         );
         clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0% 100%);
-        .container-iframes {
-            // Layout
-            justify-content: space-between;
+    }
+    .SectionEpisodios-h2 {
+        // Box model
+        margin: 0 0 toRem(26px) toRem(200px);
+    }
+    .SectionEpisodios-iFramesContainer {
+        // Layout
+        justify-content: space-between;
+        // Box model
+        padding: 0 toRem(100px);
+    }
+    .SectionEPisodios-iframe {
+        // Box model
+        width: 47%;
+        margin-bottom: toRem(72px);
+        &:last-of-type {
             // Box model
-            padding: 0 toRem(100px);
-        }
-        h2 {
-            // Box model
-            margin: 0 0 toRem(26px) toRem(200px);
-        }
-        iframe {
-            // Box model
-            width: 47%;
             margin-bottom: toRem(72px);
-            &:last-of-type {
-                // Box model
-                margin-bottom: toRem(72px);
-            }
         }
     }
 }

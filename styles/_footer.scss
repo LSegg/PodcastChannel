@@ -1,34 +1,33 @@
-footer {
+.Footer {
     margin: toRem(24px) 0 toRem(31px) 0;
-    p {
-        // Box model
-        margin-bottom: toRem(16px);
-        // Typography
-        text-align: center;
-    }
-    .container-social {
-        // Layout
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-    }
 }
-
+.Footer-p {
+    // Box model
+    margin-bottom: toRem(16px);
+    // Typography
+    text-align: center;
+}
+.Footer-aContainer {
+    // Layout
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
 /* Desktop */
 @media screen and (min-width: $breakpoint-xl) {
-    footer {
+    .Footer {
         // Layout
         display: flex;
         justify-content: space-between;
         align-items: center;
         // Box model
         margin: toRem(36px) toRem(100px) toRem(31px) toRem(100px);
-        p {
-            margin: 0;
-        }
-        .container-social {
-            // Box model
-            width: toRem(234px);
-        }
+    }
+    .Footer-p {
+        margin: 0;
+    }
+    .Footer-aContainer {
+        // Box model
+        width: toRem(234px);
     }
 }

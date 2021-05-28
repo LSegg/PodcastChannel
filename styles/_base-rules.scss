@@ -6,15 +6,13 @@
     margin: 0;
     padding: 0;
 }
-
 /* General settings */
 html {
     // Box model
     max-width: 100%;
     // Typography
-    font-size: $root-px-size; /* toRem(16px) = 16px */
+    font-size: $root-px-size; /* 1 rem = 16px */
 }
-
 body {
     // Typography
     color: $color-font;
@@ -22,32 +20,8 @@ body {
     line-height: toRem(22px);
     letter-spacing: 0;
 }
-
-h1 {
-    // Box model
-    margin-bottom: toRem(16px);
-    width: 100%;
-    // Typography
-    font-size: toRem(36px);
-    font-weight: 400;
-    line-height: toRem(42px);
-}
-
-h2 {
-    // Box model
-    margin-left: toRem(16px);
-    // Typography
-    font-size: toRem(36px);
-    font-weight: 400;
-    line-height: toRem(42px);
-}
-
-a {
-    // Typography
-    text-decoration: none;
-}
-
-button {
+/* Utilities */
+.isButton {
     // Box model
     width: 100%;
     max-width: toRem(300px);
@@ -64,55 +38,65 @@ button {
     text-transform: uppercase;
     text-align: center;
 }
-
-i {
-    // Typography
-    color: $color-font;
-}
-
-p {
-    // Typography
-    font-size: toRem(14px);
-}
-
-figcaption {
-    // Typography
-    font-size: toRem(24px);
-    font-weight: 600;
-    text-align: center;
-}
-
-/* Classes */
-.container-flex {
+.isFlex {
     // Layout
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
 }
-
-.mono {
+.isIdiomaticText {
+    // Typography
+    color: $color-font;
+}
+.isLink {
+    // Typography
+    text-decoration: none;
+}
+.isMono {
     // Typography
     font-family: $font-secondary;
 }
-
-.light-font {
+.isNewLine {
+    // Layout
+    display: block;
+}
+.isText {
+    // Typography
+    font-size: toRem(14px);
+}
+.isTitle {
+    // Box model
+    margin-bottom: toRem(16px);
+    width: 100%;
+    // Typography
+    font-size: toRem(36px);
+    font-weight: 400;
+    line-height: toRem(42px);
+}
+.isStrikethrough {
+    // Typography
+    text-decoration: line-through;
+}
+.isSubtitle {
+    // Box model
+    margin-left: toRem(16px);
+    // Typography
+    font-size: toRem(36px);
+    font-weight: 400;
+    line-height: toRem(42px);
+}
+.isLightFont {
     // Typography
     color: $color-font-light;
 }
-
 /* Desktop */
 @media screen and (min-width: $breakpoint-xl) {
-    h2 {
+    .isBlue {
         // Typography
-        font-size: toRem(48px);
+        color: $color-dot-desktop;
     }
-    p {
-        // Typography
-        font-size: toRem(16px);
-        line-height: toRem(24px);
-    }
-    button {
+    .isButton {
         // Typography
         font-size: toRem(20px);
         line-height: toRem(24px);
@@ -126,9 +110,23 @@ figcaption {
             );
         }
     }
-    .container-flex {
+    .isFlex {
         // Layout
         flex-direction: row;
         flex-wrap: wrap;
+    }
+    .isText {
+        // Typography
+        font-size: toRem(16px);
+        line-height: toRem(24px);
+    }
+    .isSubtitle {
+        // Typography
+        font-size: toRem(48px);
+    }
+    .isTitle {
+        // Typography
+        font-size: toRem(64px);
+        font-weight: 400;
     }
 }
