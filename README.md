@@ -1,6 +1,7 @@
 # Podcast Channel
 
-This is the first project from a course I'm taking, Web Full Stack Development by Acámica, the goal is to create the layout of the landing page of a Podcast channel, following the visual guides of a provided user interface and developing functionalities of content reproduction, navigation and compatibility with multiple browsers and devices.
+This is the first project from a course I'm taking, Web Full Stack Development by Acámica, the goal is to create the layout of the landing page of a Podcast channel, following the visual guides 
+of a provided user interface and developing functionalities of content reproduction, navigation and compatibility with multiple browsers and devices.
 
 ## Built with 🛠️
 
@@ -15,8 +16,7 @@ This is the first project from a course I'm taking, Web Full Stack Development b
     * *px* for font root element and borders,
     * *%* for widths,
     * *rem* for the rest.
-
-* Properties grouped by type in the following order:
+* Properties order criteria: grouped by type as follows -->
     * Inheritance
     * Layout
     * Box Model
@@ -24,7 +24,7 @@ This is the first project from a course I'm taking, Web Full Stack Development b
     * Typography
     * Animations
     * Others
-
+    
 ## Previews
 
 ### Desktop 

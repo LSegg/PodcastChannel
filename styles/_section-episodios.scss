@@ -1,6 +1,7 @@
 #section-episodios {
-    padding: 4rem 0 8.96875rem 0; /* 143.5px */
-    /* Visual Properties */
+    // Box model
+    padding: toRem(64px) 0 toRem(143.5px) 0;
+    // Visual properties
     background-color: $color-background-blue;
     background-image: linear-gradient(
         225deg,
@@ -9,20 +10,20 @@
     );
     clip-path: polygon(0 2.65%, 100% 0%, 100% 97.35%, 0% 100%);
     h2 {
-        /* Box Model */
-        margin-bottom: 1.3125rem;
+        // Box model
+        margin-bottom: toRem(21px);
     }
     .container-iframes {
-        /* Box Model */
+        // Box model
         width: 100%;
     }
     iframe {
-        /* Box Model */
+        // Box model
         width: 93.125%;
-        height: 14.5rem;
-        margin-bottom: 0.6875em;
+        height: toRem(232px);
+        margin-bottom: toRem(11px);
         &:last-of-type {
-            /* Box Model */
+            // Box model
             margin-bottom: 0;
         }
     }
@@ -31,9 +32,9 @@
 /* Desktop */
 @media screen and (min-width: $breakpoint-xl) {
     #section-episodios {
-        /* Box Model */
-        padding: 11.625rem 0 10.0375rem 0;
-        /* Visual Properties */
+        // Box model
+        padding: toRem(186px) 0 toRem(160.6px) 0;
+        // Visual properties
         background-image: linear-gradient(
             225deg,
             $color-background-blue 0%,
@@ -41,22 +42,22 @@
         );
         clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0% 100%);
         .container-iframes {
-            /* Layout */
+            // Layout
             justify-content: space-between;
-            /* Box Model */
-            padding: 0 6.25rem;
+            // Box model
+            padding: 0 toRem(100px);
         }
         h2 {
-            /* Box Model */
-            margin: 0 0 1.625rem 12.5rem;
+            // Box model
+            margin: 0 0 toRem(26px) toRem(200px);
         }
         iframe {
-            /* Box Model */
+            // Box model
             width: 47%;
-            margin-bottom: 4.5rem;
+            margin-bottom: toRem(72px);
             &:last-of-type {
-                /* Box Model */
-                margin-bottom: 4.5rem;
+                // Box model
+                margin-bottom: toRem(72px);
             }
         }
     }

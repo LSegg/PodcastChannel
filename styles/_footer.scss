@@ -1,13 +1,13 @@
 footer {
-    margin: 1.5rem 0 1.9375rem 0;
+    margin: toRem(24px) 0 toRem(31px) 0;
     p {
-        /*Box Model*/
-        margin-bottom: 1rem;
-        /* Typography */
+        // Box model
+        margin-bottom: toRem(16px);
+        // Typography
         text-align: center;
     }
     .container-social {
-        /* Layout */
+        // Layout
         display: flex;
         justify-content: space-evenly;
         align-items: center;
@@ -17,18 +17,18 @@ footer {
 /* Desktop */
 @media screen and (min-width: $breakpoint-xl) {
     footer {
-        /* Layout */
+        // Layout
         display: flex;
         justify-content: space-between;
         align-items: center;
-        /*Box Model*/
-        margin: 2.25rem 6.25rem 1.9375rem 6.25rem;
+        // Box model
+        margin: toRem(36px) toRem(100px) toRem(31px) toRem(100px);
         p {
             margin: 0;
         }
         .container-social {
-            /*Box Model*/
-            width: 14.625rem;
+            // Box model
+            width: toRem(234px);
         }
     }
 }

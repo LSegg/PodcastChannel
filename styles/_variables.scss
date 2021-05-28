@@ -1,22 +1,30 @@
-/* Fonts */
+// Fonts
 $font-primary: "IBM Plex Sans", sans-serif;
 $font-secondary: "IBM Plex Mono", monospace;
 
-/* Colors*/
+// Colors
 $color-font: #060a24;
-$color-font-w: #ffffff;
-$color-active: rgba(6, 10, 36, 0.56);
+$color-font-light: #ffffff;
+$color-a-active: rgba(6, 10, 36, 0.56);
 $color-background-blue: #0000ff;
 $color-dark-blue: #0000a3;
-$color-desktop-dot: #0000ec;
+$color-dot-desktop: #0000ec;
 $color-btn: #00f3bb;
 $color-btn-hover-blue: #0000fe;
 $color-btn-hover-green: #00f0b8;
 
-/* Breakpoints */
-$breakpoint-xs: 20em; /* 320px (mobile devices) */
-$breakpoint-sm: 30em; /* 480px (iPads, tablets) */
-$breakpoint-m: 48em; /* 768px (small screens, laptops) */
-$breakpoint-lg: 64em; /* 1024px (large screens, desktops) */
-$breakpoint-xl: 90em; /* 1440px (extra large screens, TVs) */
-/* E.g. :@media screen and (max-width: $breakpoint-m) */
+// Default pixel size
+$root-px-size: 16px;
+
+// PX to rems
+@function toRem($value) {
+    $remValue: ($value / $root-px-size) + rem;
+    @return $remValue;
+}
+
+// Breakpoints
+$breakpoint-xs: toRem(320px); // 320px (mobile devices)
+$breakpoint-sm: toRem(480px); // 480px (iPads, tablets)
+$breakpoint-m: toRem(768px); // 768px (small screens, laptops)
+$breakpoint-lg: toRem(1024px); // 1024px (large screens, desktops)
+$breakpoint-xl: toRem(1440px); // 1440px (extra large screens, TVs)

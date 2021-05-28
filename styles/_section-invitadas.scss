@@ -1,12 +1,12 @@
 #section-invitadas {
     .container-imgs {
-        /* Box Model */
-        margin-top: 0.875rem;
+        // Box model
+        margin-top: toRem(14px);
     }
-    /* Box Model */
+    // Box model
     width: 100%;
     img {
-        /* Box Model */
+        // Box model
         width: 100%;
     }
 }
@@ -15,11 +15,11 @@
 @media screen and (min-width: $breakpoint-xl) {
     #section-invitadas {
         h2 {
-            /* Box Model */
-            margin: 0 0 2.25rem 12.5rem;
+            // Box model
+            margin: 0 0 toRem(36px) toRem(200px);
         }
         img {
-            /* Box Model */
+            // Box model
             width: calc(100% / 3);
         }
     }

@@ -1,7 +1,7 @@
 #section-novedades {
-    /* Box Model */
-    padding: 0 1rem;
-    /* Visual Properties */
+    // Box model
+    padding: 0 toRem(16px);
+    // Visual properties
     background-color: $color-background-blue;
     background-image: linear-gradient(
         225deg,
@@ -11,22 +11,22 @@
     clip-path: polygon(0 10%, 100% 0%, 100% 100%, 0% 100%);
     text-align: center;
     h2 {
-        /* Box Model */
+        // Box model
         margin: 0;
-        padding-top: 4rem;
+        padding-top: toRem(64px);
     }
     button {
-        /* Box Model */
-        margin: 2.25rem 0 4.1875em 0;
+        // Box model
+        margin: toRem(36px) 0 toRem(67px) 0;
     }
 }
 
 /* Desktop */
 @media screen and (min-width: $breakpoint-xl) {
     #section-novedades {
-        /* Box Model */
-        padding: 13.3125rem 0 9.4375rem 0;
-        /* Visual Properties */
+        // Box model
+        padding: toRem(213px) 0 toRem(151px) 0;
+        // Visual properties
         clip-path: polygon(0 30%, 100% 0%, 100% 100%, 0% 100%);
     }
 }

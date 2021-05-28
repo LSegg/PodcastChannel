@@ -1,36 +1,35 @@
-header {
-    /* Box Model */
-    width: 100%;
-    /* Layout */
+.Header {
+    // Layout
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* Box Model */
-    padding: 0.625rem 1.1875rem 0.625rem 1rem; /* 10px 19px 10px 16px */
+    // Box Model
+    width: 100%;
+    padding: toRem(10px) toRem(19px) toRem(10px) toRem(16px);
     .checkbox {
-        /* Layout */
+        // Layout
         position: absolute;
-        /* Visual Properties */
+        // Visual properties
         opacity: 0;
     }
     .times {
-        /* Layout */
+        // Layout
         position: absolute;
         top: 0.7rem;
         right: 1.3rem;
-        /* Visual Properties */
+        // Visual properties
         opacity: 0;
     }
     nav {
-        /* Layout */
+        // Layout
         display: inline-block;
         position: absolute;
-        top: 2.75rem;
+        top: toRem(44px);
         left: 0;
-        /* Box Model */
-        padding: 1rem 0 0 1rem;
+        // Box model
+        padding: toRem(16px) 0 0 toRem(16px);
         width: 100%;
-        /* Visual Properties */
+        // Visual properties
         background-color: $color-background-blue;
         visibility: hidden;
         ul {
@@ -38,16 +37,16 @@ header {
             flex-direction: column;
             justify-content: space-evenly;
             align-items: flex-start;
-            /* Typography */
+            // Typography
             list-style-type: none;
             li {
-                /* Box Model */
-                padding-bottom: 1.5em;
+                // Box model
+                padding-bottom: toRem(24px);
                 a {
-                    /* Typograpphy */
-                    color: $color-font-w;
+                    // Typography
+                    color: $color-font-light;
                     text-transform: uppercase;
-                    line-height: 1.75rem;
+                    line-height: toRem(28px);
                     &:hover {
                         color: $color-btn;
                         text-decoration: line-through;
@@ -55,7 +54,7 @@ header {
                         font-weight: 500;
                     }
                     &:active {
-                        color: $color-active;
+                        color: $color-a-active;
                     }
                 }
             }
@@ -63,58 +62,58 @@ header {
     }
     /* Burger menu functionality */
     input[type="checkbox"]:checked ~ .bars {
-        /* Visual Properties */
+        // Visual properties
         opacity: 0%;
     }
     input[type="checkbox"]:checked ~ .times {
-        /* Visual Properties */
+        // Visual properties
         opacity: 100%;
     }
     input[type="checkbox"]:checked ~ nav {
-        /* Layout */
+        // Layout
         visibility: visible;
     }
 }
 
 /* Desktop */
 @media screen and (min-width: $breakpoint-xl) {
-    header {
-        /* Box Model */
-        padding: 0 6.25rem;
-        #logo-podcast {
-            /* Box Model */
-            width: 2.25rem;
-            margin: 1.375rem 0;
+    .Header {
+        // Box model
+        padding: 0 toRem(100px);
+        .Header-imageLogo {
+            // Box model
+            width: toRem(36px);
+            margin: toRem(22px) 0;
         }
         input,
         label {
-            /* Layout */
+            // Layout
             display: none;
         }
         nav {
-            /* Layout */
+            // Layout
             position: static;
-            /* Box Model */
+            // Box model
             width: fit-content;
-            margin: 1.625rem 0;
+            margin: toRem(26px) 0;
             padding: 0;
-            /* Visual Properties */
+            // Visual properties
             visibility: visible;
-            background-color: $color-font-w;
+            background-color: $color-font-light;
             ul {
-                /* Layout */
+                // Layout
                 flex-direction: row;
                 justify-content: space-between;
                 li {
-                    /* Box Model */
+                    // Box model
                     padding: 0;
-                    margin-left: 3rem;
+                    margin-left: toRem(48px);
                     &:first-of-type {
-                        /* Box Model */
+                        // Box model
                         margin-left: 0;
                     }
                     a {
-                        /* Typograpphy */
+                        // Typography
                         color: $color-font;
                     }
                 }

@@ -1,13 +1,13 @@
 #intro {
-    /* Box Model */
-    margin: 1.8125rem 1rem 1.5rem 1rem; /* 29px 16px 24px 16px */
+    // Box model
+    margin: toRem(29px) toRem(16px) toRem(24px) toRem(16px); /* 29px 16px 24px 16px */
     .strikethrough {
-        /* Typography */
+        // Typography
         text-decoration: line-through;
     }
     p {
-        /* Box Model */
-        margin-bottom: 2.25rem;
+        // Box model
+        margin-bottom: toRem(36px);
     }
     .desktop {
         display: none;
@@ -17,32 +17,32 @@
 /* Desktop */
 @media screen and (min-width: $breakpoint-xl) {
     #intro {
-        /* Box Model */
-        margin: 7.5rem 0 0.3125rem 11.25rem;
+        // Box model
+        margin: toRem(120px) 0 toRem(5px) toRem(180px);
         h1 {
-            /* Typography */
-            font-size: 4rem;
+            // Typography
+            font-size: toRem(64px);
             font-weight: 400;
         }
         .title {
-            /* Layout */
+            // Layout
             display: none;
         }
         .dot {
-            /* Typography */
-            color: $color-desktop-dot;
+            // Typography
+            color: $color-dot-desktop;
         }
         .mobile {
-            /* Layout */
+            // Layout
             display: none;
         }
         .desktop {
-            /* Layout */
+            // Layout
             display: block;
         }
         p {
-            /* Box Model */
-            margin-bottom: 3.5rem;
+            // Box model
+            margin-bottom: toRem(56px);
         }
     }
 }

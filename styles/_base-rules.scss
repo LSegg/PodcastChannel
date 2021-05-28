@@ -1,90 +1,90 @@
 /* Cleaning some default styles */
 * {
-    /* Box Model */
+    // Box model
     border: 0;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-/* General Settings */
+/* General settings */
 html {
-    /* Box Model */
+    // Box model
     max-width: 100%;
-    /* Typhography */
-    font-size: 16px; /* 1em = 16px */
+    // Typography
+    font-size: $root-px-size; /* toRem(16px) = 16px */
 }
 
 body {
-    /* Typhography */
+    // Typography
     color: $color-font;
     font-family: $font-primary;
-    line-height: 1.375rem;
+    line-height: toRem(22px);
     letter-spacing: 0;
 }
 
 h1 {
-    /* Box Model */
-    margin-bottom: 1rem;
+    // Box model
+    margin-bottom: toRem(16px);
     width: 100%;
-    /* Typography */
-    font-size: 2.25rem;
+    // Typography
+    font-size: toRem(36px);
     font-weight: 400;
-    line-height: 2.625rem;
+    line-height: toRem(42px);
 }
 
 h2 {
-    /* Box Model */
-    margin-left: 1rem;
-    /* Typhography */
-    font-size: 2.25rem;
+    // Box model
+    margin-left: toRem(16px);
+    // Typography
+    font-size: toRem(36px);
     font-weight: 400;
-    line-height: 2.625rem;
+    line-height: toRem(42px);
 }
 
 a {
-    /* Typhography */
+    // Typography
     text-decoration: none;
 }
 
 button {
-    /* Box Model */
+    // Box model
     width: 100%;
-    max-width: 18.75rem;
-    padding: 0.8125rem 0;
-    /* Visual Properties */
+    max-width: toRem(300px);
+    padding: toRem(13px) 0;
+    // Visual Properties
     background-color: $color-btn;
     white-space: nowrap;
     &:hover {
         cursor: pointer;
     }
-    /* Typography */
-    font-size: 1rem;
+    // Typography
+    font-size: toRem(16px);
     font-weight: 500;
     text-transform: uppercase;
     text-align: center;
 }
 
 i {
-    /* Typhography */
+    // Typography
     color: $color-font;
 }
 
 p {
-    /* Typhography */
-    font-size: 0.875rem;
+    // Typography
+    font-size: toRem(14px);
 }
 
 figcaption {
-    /* Typography */
-    font-size: 1.5rem;
+    // Typography
+    font-size: toRem(24px);
     font-weight: 600;
     text-align: center;
 }
 
 /* Classes */
 .container-flex {
-    /* Layout */
+    // Layout
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -92,33 +92,33 @@ figcaption {
 }
 
 .mono {
-    /* Typhography */
+    // Typography
     font-family: $font-secondary;
 }
 
 .light-font {
-    /* Typhography */
-    color: $color-font-w;
+    // Typography
+    color: $color-font-light;
 }
 
 /* Desktop */
 @media screen and (min-width: $breakpoint-xl) {
     h2 {
-        /* Typhography */
-        font-size: 3rem;
+        // Typography
+        font-size: toRem(48px);
     }
     p {
-        /* Typhography */
-        font-size: 1rem;
-        line-height: 1.5rem;
+        // Typography
+        font-size: toRem(16px);
+        line-height: toRem(24px);
     }
     button {
-        /* Typhography */
-        font-size: 1.25rem;
-        line-height: 1.5rem;
-        /* Visual Properties */
+        // Typography
+        font-size: toRem(20px);
+        line-height: toRem(24px);
+        // Visual Properties
         &:hover {
-            color: $color-font-w;
+            color: $color-font-light;
             background-image: linear-gradient(
                 225deg,
                 $color-btn-hover-blue 0%,
@@ -127,7 +127,7 @@ figcaption {
         }
     }
     .container-flex {
-        /* Layout */
+        // Layout
         flex-direction: row;
         flex-wrap: wrap;
     }

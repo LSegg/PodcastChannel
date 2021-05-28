@@ -1,25 +1,25 @@
 #section-venimos {
-    /* Box Model */
+    // Box model
     width: 100%;
     h2 {
-        /* Layout */
+        // Layout
         span {
             display: block;
         }
     }
     p {
-        /* Box Model */
-        margin: 0.5rem 1rem;
+        // Box model
+        margin: toRem(8px) toRem(16px);
         &:last-of-type {
-            margin-bottom: 3.375rem;
+            margin-bottom: toRem(54px);
         }
     }
     img {
-        /* Layout */
+        // Layout
         z-index: 2;
-        /* Box Model */
-        margin-top: -5.96875rem;
-        width: 22.5rem;
+        // Box model
+        margin-top: -toRem(95.5px);
+        width: toRem(360px);
     }
 }
 
@@ -32,12 +32,12 @@
             }
         }
         img {
-            /* Box Model */
-            margin-top: -10.5375em;
+            // Box model
+            margin-top: -toRem(168.6px);
             width: 112.5%;
         }
         .container-text {
-            /* Layout */
+            // Layout
             display: inline-block;
         }
     }
