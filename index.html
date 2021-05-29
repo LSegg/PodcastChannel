@@ -4,6 +4,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Podcast Channel</title>
+        <link rel="shortcut icon" href="images/favicon.ico" />
         <link
             rel="stylesheet"
             href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
@@ -43,7 +44,9 @@
                         >
                     </li>
                     <li class="Header-li">
-                        <a class="Header-a isLink" href="#section-venimos">Nosotros</a>
+                        <a class="Header-a isLink" href="#section-venimos"
+                            >Nosotros</a
+                        >
                     </li>
                     <li class="Header-li">
                         <a class="Header-a isLink" href="#section-invitadas"
@@ -51,7 +54,9 @@
                         >
                     </li>
                     <li class="Header-li">
-                        <a class="Header-a isLink" href="#section-temas">Tópicos</a>
+                        <a class="Header-a isLink" href="#section-temas"
+                            >Tópicos</a
+                        >
                     </li>
                 </ul>
             </nav>
@@ -86,22 +91,22 @@
                 </h2>
                 <div class="isFlex SectionEpisodios-iFramesContainer">
                     <iframe
-                        class="SectionEPisodios-iframe"
+                        class="SectionEpisodios-iframe"
                         src="https://open.spotify.com/embed-podcast/episode/7AZZy2nJ4R9ZndHW0h2yxt"
                         allow="encrypted-media"
                     ></iframe>
                     <iframe
-                        class="SectionEPisodios-iframe"
+                        class="SectionEpisodios-iframe"
                         src="https://open.spotify.com/embed-podcast/episode/1ezdL2ivAGLwSE6Xbssxqt"
                         allow="encrypted-media"
                     ></iframe>
                     <iframe
-                        class="SectionEPisodios-iframe"
+                        class="SectionEpisodios-iframe"
                         src="https://open.spotify.com/embed-podcast/episode/3cWta1iiQSfvrdHaCbLkSD"
                         allow="encrypted-media"
                     ></iframe>
                     <iframe
-                        class="SectionEPisodios-iframe"
+                        class="SectionEpisodios-iframe"
                         src="https://open.spotify.com/embed/episode/31VyAQAwBiKoHVoYUCEzjQ"
                         allow="encrypted-media"
                     ></iframe>
@@ -109,15 +114,17 @@
             </section>
 
             <section class="SectionVenimos isFlex" id="section-venimos">
-                <img
-                    class="SectionVenimos-img"
-                    src="images/phone.png"
-                    alt="Pantalla móvil de un celular donde
+                <figure class="SectionVenimos-imgWrapper">
+                    <img
+                        class="SectionVenimos-img"
+                        src="images/phone.png"
+                        alt="Pantalla móvil de un celular donde
                 se observa una noticia periodística de la historia de las
                 mujeres en el mundo de la programación."
-                />
+                    />
+                </figure>
                 <div class="SectionVenimos-textContainer">
-                    <h2 class="isSubtitle">
+                    <h2 class="SectionVenimos-h2 isSubtitle">
                         <span class="SectionVenimos-span isNewLine"
                             >De dónde</span
                         >
@@ -181,7 +188,9 @@
                             src="images/icon1.svg"
                             alt="Logo para el tópico 'trabajo remoto'."
                         />
-                        <figcaption class="SectionTemas-figcaption">Trabajo remoto</figcaption>
+                        <figcaption class="SectionTemas-figcaption">
+                            Trabajo remoto
+                        </figcaption>
                     </figure>
                     <figure class="SectionTemas-figure">
                         <img
@@ -190,7 +199,7 @@
                             alt="Logo para el tópico 'repensando la programación'."
                         />
                         <figcaption class="SectionTemas-figcaption">
-                            Repensando <span class="isNewLine">la programación</span>
+                            Repensando la programación
                         </figcaption>
                     </figure>
                     <figure class="SectionTemas-figure">
@@ -199,7 +208,9 @@
                             src="images/icon3.svg"
                             alt="Logo para el tópico 'bases del código'."
                         />
-                        <figcaption class="SectionTemas-figcaption">Bases del código</figcaption>
+                        <figcaption class="SectionTemas-figcaption">
+                            Bases del código
+                        </figcaption>
                     </figure>
                     <figure class="SectionTemas-figure">
                         <img
@@ -209,7 +220,7 @@
                         'seguridad informática'."
                         />
                         <figcaption class="SectionTemas-figcaption">
-                            Seguridad <span>informática</span>
+                            Seguridad informática
                         </figcaption>
                     </figure>
                 </div>
@@ -219,13 +230,16 @@
                 <h2 class="SectionNovedades-h2 isSubtitle isLightFont">
                     ¿Querés las últimas novedades?
                 </h2>
-                <button class="SectionNovedades-btn isButton isMono">Escuchá los episodios</button>
+                <button class="SectionNovedades-btn isButton isMono">
+                    Escuchá los episodios
+                </button>
             </section>
         </main>
 
         <footer class="Footer">
             <p class="Footer-p isMono isText">
-                <i class="far fa-copyright isIdiomaticText"></i> 2019- Hello blue pale dot
+                <i class="far fa-copyright isIdiomaticText"></i> 2019- Hello
+                blue pale dot
             </p>
             <div class="Footer-aContainer">
                 <a class="isLink" href="https://spotify.com/" target="_blank"
@@ -240,7 +254,10 @@
                 <a class="isLink" href="https://facebook.com/" target="_blank"
                     ><i class="fab fa-facebook isIdiomaticText"></i
                 ></a>
-                <a class="isLink" href="https://web.telegram.org/" target="_blank"
+                <a
+                    class="isLink"
+                    href="https://web.telegram.org/"
+                    target="_blank"
                     ><i class="fab fa-telegram isIdiomaticText"></i
                 ></a>
             </div>

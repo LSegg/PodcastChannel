@@ -1,41 +1,58 @@
 .SectionVenimos {
     // Box model
     width: 100%;
-    //Visual Properties
-    overflow: hidden;
-}
-.SectionVenimos-img {
-    // Layout
-    z-index: 2;
-    position: relative;
-    top: toRem(-95.5px);
-    // Box model
-    width: 112.5%;
-}
-.SectionVenimos-p {
-    // Box model
-    margin: toRem(8px) toRem(16px);
-    &:last-of-type {
-        margin-bottom: toRem(54px);
+    &-imgWrapper {
+        // Layout
+        display: inline-block;
+        z-index: 2;
+        position: relative;
+        top: toRem(-95.5px);
+        //Visual Properties
+        overflow: hidden;
     }
-}
-/* Responsive */
-@media screen and (min-width: $breakpoint-lg-tablet) {
-    .SectionVenimos {
+    &-img {
+        // Box model
+        margin-left: -6.25%;
+        width: 112.5%;
+        max-width: toRem(457.6px);
+    }
+    &-p {
+        // Box model
+        margin: toRem(8px) toRem(16px);
+        &:last-of-type {
+            margin-bottom: toRem(54px);
+        }
+    }
+    &-textContainer {
+        // Layout
+        display: inline-block;
+        max-width: toRem(464px);
+    }
+    /* Responsive */
+    @media screen and (min-width: $breakpoint-sm-tablet) {
         flex-direction: row;
         flex-wrap: wrap;
-        .SectionVenimos-img {
+        &-img {
             // Layout
             top: toRem(-168.6px);
             // Box model
             width: toRem(457.6px);
         }
-        .SectionVenimos-textContainer {
-            // Layout
-            display: inline-block;
-        }
-        .SectionVenimos-span {
+        &-span {
             display: inline;
+        }
+    }
+    /* Responsive */
+    @media screen and (min-width: $breakpoint-sm-tablet) {
+        &-h2 {
+            margin: 0 0 toRem(24px) 0;
+        }
+        &-p {
+            // Box model
+            margin: 0;
+            &:last-of-type {
+                margin-top: toRem(16px);
+            }
         }
     }
 }

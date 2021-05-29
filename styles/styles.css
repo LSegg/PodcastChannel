@@ -147,6 +147,7 @@ body {
   width: 100%;
   padding: 0.625rem 1.1875rem 0.625rem 1rem;
   /* Burger menu functionality */
+  /* Responsive */
 }
 
 .Header input[type="checkbox"]:checked ~ .Header-label--bars {
@@ -212,7 +213,6 @@ body {
   color: rgba(6, 10, 36, 0.56);
 }
 
-/* Responsive */
 @media screen and (min-width: 64rem) {
   .Header {
     padding: 0 6.25rem;
@@ -221,8 +221,7 @@ body {
     width: 2.25rem;
     margin: 1.375rem 0;
   }
-  .Header-checkbox,
-  .Header-label {
+  .Header-checkbox, .Header-label {
     display: none;
   }
   .Header-nav {
@@ -258,6 +257,7 @@ body {
 
 .SectionIntro {
   margin: 1.8125rem 1rem 1.5rem 1rem;
+  /* Responsive */
 }
 
 .SectionIntro-p {
@@ -268,7 +268,6 @@ body {
   display: none;
 }
 
-/* Responsive */
 @media screen and (min-width: 64rem) {
   .SectionIntro-span--title {
     display: inline;
@@ -296,6 +295,7 @@ body {
   background-image: linear-gradient(225deg, #0000ff 0%, #0000a3 100%);
   -webkit-clip-path: polygon(0 2.65%, 100% 0%, 100% 97.35%, 0% 100%);
           clip-path: polygon(0 2.65%, 100% 0%, 100% 97.35%, 0% 100%);
+  /* Responsive */
 }
 
 .SectionEpisodios-h2 {
@@ -306,17 +306,16 @@ body {
   width: 100%;
 }
 
-.SectionEPisodios-iframe {
+.SectionEpisodios-iframe {
   width: 93.125%;
   height: 14.5rem;
   margin-bottom: 0.6875rem;
 }
 
-.SectionEPisodios-iframe:last-of-type {
+.SectionEpisodios-iframe:last-of-type {
   margin-bottom: 0;
 }
 
-/* Responsive */
 @media screen and (min-width: 64rem) {
   .SectionEpisodios-iFramesContainer {
     -webkit-box-orient: horizontal;
@@ -330,11 +329,11 @@ body {
             justify-content: space-between;
     padding: 0 6.25rem;
   }
-  .SectionEPisodios-iframe {
+  .SectionEpisodios-iframe {
     width: 47%;
     margin-bottom: 4.5rem;
   }
-  .SectionEPisodios-iframe:last-of-type {
+  .SectionEpisodios-iframe:last-of-type {
     margin-bottom: 4.5rem;
   }
 }
@@ -353,14 +352,22 @@ body {
 
 .SectionVenimos {
   width: 100%;
+  /* Responsive */
+  /* Responsive */
+}
+
+.SectionVenimos-imgWrapper {
+  display: inline-block;
+  z-index: 2;
+  position: relative;
+  top: -5.96875rem;
   overflow: hidden;
 }
 
 .SectionVenimos-img {
-  z-index: 2;
-  position: relative;
-  top: -5.96875rem;
+  margin-left: -6.25%;
   width: 112.5%;
+  max-width: 28.6rem;
 }
 
 .SectionVenimos-p {
@@ -371,8 +378,12 @@ body {
   margin-bottom: 3.375rem;
 }
 
-/* Responsive */
-@media screen and (min-width: 64rem) {
+.SectionVenimos-textContainer {
+  display: inline-block;
+  max-width: 29rem;
+}
+
+@media screen and (min-width: 48rem) {
   .SectionVenimos {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -381,20 +392,30 @@ body {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-  .SectionVenimos .SectionVenimos-img {
+  .SectionVenimos-img {
     top: -10.5375rem;
     width: 28.6rem;
   }
-  .SectionVenimos .SectionVenimos-textContainer {
-    display: inline-block;
-  }
-  .SectionVenimos .SectionVenimos-span {
+  .SectionVenimos-span {
     display: inline;
+  }
+}
+
+@media screen and (min-width: 48rem) {
+  .SectionVenimos-h2 {
+    margin: 0 0 1.5rem 0;
+  }
+  .SectionVenimos-p {
+    margin: 0;
+  }
+  .SectionVenimos-p:last-of-type {
+    margin-top: 1rem;
   }
 }
 
 .SectionInvitadas {
   width: 100%;
+  /* Responsive */
 }
 
 .SectionInvitadas-imgContainer {
@@ -405,7 +426,6 @@ body {
   width: 100%;
 }
 
-/* Responsive */
 @media screen and (min-width: 48rem) {
   .SectionInvitadas-imgContainer {
     -webkit-box-orient: horizontal;
@@ -431,6 +451,7 @@ body {
 
 .SectionTemas {
   margin: 3rem 0 2.625rem 0;
+  /* Responsive */
 }
 
 .SectionTemas-h2 {
@@ -438,6 +459,7 @@ body {
 }
 
 .SectionTemas-figure {
+  height: 13.125rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -445,13 +467,10 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 3.25rem;
+  margin: 0 0 3.25rem 0;
   text-align: center;
 }
 
@@ -468,12 +487,12 @@ body {
 }
 
 .SectionTemas-figcaption {
+  margin: 0 0.625rem;
   font-size: 1.5rem;
   font-weight: 600;
   text-align: center;
 }
 
-/* Responsive */
 @media screen and (min-width: 48rem) {
   .SectionTemas-figureContainer {
     -webkit-box-orient: horizontal;
@@ -506,6 +525,7 @@ body {
 
 .Footer {
   margin: 1.5rem 0 1.9375rem 0;
+  /* Responsive */
 }
 
 .Footer-p {
@@ -525,7 +545,6 @@ body {
           align-items: center;
 }
 
-/* Responsive */
 @media screen and (min-width: 64rem) {
   .Footer {
     display: -webkit-box;
@@ -554,6 +573,7 @@ body {
   -webkit-clip-path: polygon(0 10%, 100% 0%, 100% 100%, 0% 100%);
           clip-path: polygon(0 10%, 100% 0%, 100% 100%, 0% 100%);
   text-align: center;
+  /* Responsive */
 }
 
 .SectionNovedades-h2 {
@@ -565,7 +585,6 @@ body {
   margin: 2.25rem 0 4.1875rem 0;
 }
 
-/* Responsive */
 @media screen and (min-width: 90rem) {
   .SectionNovedades {
     padding: 13.3125rem 0 9.4375rem 0;
