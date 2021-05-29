@@ -1,12 +1,11 @@
 .SectionVenimos {
     // Box model
-    width: 100%;
     &-imgWrapper {
         // Layout
         display: inline-block;
         z-index: 2;
         position: relative;
-        top: toRem(-95.5px);
+        margin-top: toRem(-95.5px);
         //Visual Properties
         overflow: hidden;
     }
@@ -20,16 +19,19 @@
         // Box model
         margin: toRem(8px) toRem(16px);
         &:last-of-type {
+            // Box model
             margin-bottom: toRem(54px);
         }
     }
     &-textContainer {
         // Layout
         display: inline-block;
+        // Box model
         max-width: toRem(464px);
     }
     /* Responsive */
     @media screen and (min-width: $breakpoint-sm-tablet) {
+        // Layout
         flex-direction: row;
         flex-wrap: wrap;
         &-img {
@@ -39,18 +41,21 @@
             width: toRem(457.6px);
         }
         &-span {
+            // Layout
             display: inline;
         }
     }
     /* Responsive */
     @media screen and (min-width: $breakpoint-sm-tablet) {
         &-h2 {
+            // Box model
             margin: 0 0 toRem(24px) 0;
         }
         &-p {
             // Box model
             margin: 0;
             &:last-of-type {
+                // Box model
                 margin-top: toRem(16px);
             }
         }

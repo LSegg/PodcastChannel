@@ -12,13 +12,17 @@ of a provided user interface and developing functionalities of content reproduct
 ## Features 📋
 
 * Mobile first.
+* Responsive views:
+    * mobile
+    * small tablets
+    * large tablets
+    * and desktop
 * Units criteria:
     * *px* for font root element and borders,
-    * *%* for widths,
-    * *rem* for the rest.
+    * *%* and *rem* for the rest.
 * Naming criteria:
     * `.TitleCase` modules
-    * `.-camelCase` elements
+    * `-camelCase` elements
     * `--camelCase` modifiers
 * Properties order criteria: grouped by type as follows -->
     * Inheritance
@@ -35,15 +39,10 @@ of a provided user interface and developing functionalities of content reproduct
 
 ![preview desktop](https://github.com/LSegg/PodcastChannel/blob/main/previews/desktop_preview.png?raw=true)
 
-(actualizar preview desktop)
 ### Mobile
 
 ![preview mobile](https://github.com/LSegg/PodcastChannel/blob/main/previews/mobile_preview.png?raw=true)
 
-(actualizar preview mobile)
-### Tablet
-
-(agregar preview tablet)
 
 ## Requirements ⚙️
 

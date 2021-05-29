@@ -12,6 +12,7 @@
     /* Responsive */
     @media screen and (min-width: $breakpoint-sm-tablet) {
         &-imgContainer {
+            // Layout
             flex-direction: row;
             flex-wrap: wrap;
         }

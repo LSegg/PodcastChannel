@@ -1,4 +1,5 @@
 .Footer {
+    // Box model
     margin: toRem(24px) 0 toRem(31px) 0;
     &-p {
         // Box model
@@ -21,6 +22,7 @@
         // Box model
         margin: toRem(36px) toRem(100px) toRem(31px) toRem(100px);
         &-p {
+            // Box model
             margin: 0;
         }
         &-aContainer {

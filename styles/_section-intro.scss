@@ -5,12 +5,14 @@
         // Box model
         margin-bottom: toRem(36px);
         &--desktop {
+            // Layout
             display: none;
         }
     }
     /* Responsive */
     @media screen and (min-width: $breakpoint-lg-tablet) {
         &-span--title {
+            // Layout
             display: inline;
         }
     }

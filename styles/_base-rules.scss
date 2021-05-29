@@ -30,6 +30,7 @@ body {
     background-color: $color-btn;
     white-space: nowrap;
     &:hover {
+        // Visual Properties
         cursor: pointer;
     }
     // Typography
@@ -68,7 +69,6 @@ body {
 .isTitle {
     // Box model
     margin-bottom: toRem(16px);
-    width: 100%;
     // Typography
     font-size: toRem(36px);
     font-weight: 400;
@@ -109,7 +109,9 @@ body {
         line-height: toRem(24px);
         // Visual Properties
         &:hover {
+            // Typography
             color: $color-font-light;
+            // Visual Properties
             background-image: linear-gradient(
                 225deg,
                 $color-btn-hover-blue 0%,

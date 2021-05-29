@@ -2,43 +2,51 @@
     // Box model
     margin: toRem(48px) 0 toRem(42px) 0;
     &-h2 {
+        // Box model
         margin-bottom: toRem(24px);
     }
     &-figure {
         // Layout
-        height: toRem(210px);
         display: flex;
         flex-direction: column;
         align-items: center;
         // Box model
         margin: 0 0 toRem(52px) 0;
         &:first-of-type {
+            // Box model
             margin-bottom: toRem(36px);
         }
         &:last-of-type {
+            // Box model
             margin-bottom: 0;
         }
         // Typography
         text-align: center;
     }
     &-img {
+        // Box model
         margin: toRem(13px) 0;
     }
     &-figcaption {
+        // Box model
         margin: 0 toRem(10px);
         // Typography
         font-size: toRem(24px);
         font-weight: 600;
+        line-height: toRem(30px);
         text-align: center;
     }
     /* Responsive */
     @media screen and (min-width: $breakpoint-sm-tablet) {
         &-figureContainer {
+            // Layout
             flex-direction: row;
             flex-wrap: wrap;
         }
         &-figure {
+            // Box model
             width: calc(100% / 2);
+            height: toRem(210px);
         }
     }
     @media screen and (min-width: $breakpoint-desktop) {
@@ -51,6 +59,7 @@
             width: calc(100% / 4);
             margin-bottom: 0;
             &:first-of-type {
+                // Box model
                 margin-bottom: 0;
             }
         }

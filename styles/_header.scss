@@ -28,8 +28,8 @@
     &-label--times {
         // Layout
         position: absolute;
-        top: 0.7rem;
-        right: 1.3rem;
+        top: toRem(11px);
+        right: toRem(21px);
         // Visual properties
         opacity: 0;
     }
@@ -47,6 +47,7 @@
         visibility: hidden;
     }
     &-ul {
+        // Layout
         align-items: flex-start;
         // Typography
         list-style-type: none;
@@ -61,12 +62,15 @@
         text-transform: uppercase;
         line-height: toRem(28px);
         &:hover {
+            // Typography
             color: $color-btn;
             text-decoration: line-through;
-            cursor: pointer;
             font-weight: 500;
+            // Visual properties
+            cursor: pointer;
         }
         &:active {
+            // Typography
             color: $color-a-active;
         }
     }
