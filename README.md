@@ -1,7 +1,6 @@
 # Podcast Channel
 
-This is the first project from a course I'm taking, Web Full Stack Development by Acámica, the goal is to create the layout of the landing page of a Podcast channel, following the visual guides 
-of a provided user interface and developing functionalities of content reproduction, navigation and compatibility with multiple browsers and devices.
+This is the first project from the Web Full Stack Development intensive programme by Acámica, the goal was to create the layout of the landing page of a Podcast channel, following the visual guides of a provided user interface and developing functionalities of content reproduction, navigation and compatibility with multiple browsers and devices.
 
 ## Built with 🛠️
 
